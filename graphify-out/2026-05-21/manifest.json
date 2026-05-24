@@ -1,0 +1,922 @@
+{
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\refactor.js": {
+    "mtime": 1778464963.0035152,
+    "ast_hash": "45c6677363927e81a4615825daf96668",
+    "semantic_hash": "45c6677363927e81a4615825daf96668"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\eslint.config.mjs": {
+    "mtime": 1777937638.5777304,
+    "ast_hash": "069d66f3fd2af0b03d917cf51a1f4c42",
+    "semantic_hash": "069d66f3fd2af0b03d917cf51a1f4c42"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\nest-cli.json": {
+    "mtime": 1777937638.5777304,
+    "ast_hash": "fa439650fa28a1a7aa8c2b6d81c8cc20",
+    "semantic_hash": "fa439650fa28a1a7aa8c2b6d81c8cc20"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\package.json": {
+    "mtime": 1777937700.2718117,
+    "ast_hash": "53bdc0dff1998d57887e3e4c57cb699d",
+    "semantic_hash": "53bdc0dff1998d57887e3e4c57cb699d"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\tsconfig.build.json": {
+    "mtime": 1777937638.5793574,
+    "ast_hash": "d23fc4aff02c91ce9c424c15aea9b49b",
+    "semantic_hash": "d23fc4aff02c91ce9c424c15aea9b49b"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\tsconfig.json": {
+    "mtime": 1777937638.5793574,
+    "ast_hash": "e99b998156dc99eda85378413a794718",
+    "semantic_hash": "e99b998156dc99eda85378413a794718"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\src\\app.controller.spec.ts": {
+    "mtime": 1777937638.5809178,
+    "ast_hash": "e91fed2ee35431d60d1adbf1d5739b83",
+    "semantic_hash": "e91fed2ee35431d60d1adbf1d5739b83"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\src\\app.controller.ts": {
+    "mtime": 1777937638.5803716,
+    "ast_hash": "ae15d1c5a85e6ebfad68b7193766dfb5",
+    "semantic_hash": "ae15d1c5a85e6ebfad68b7193766dfb5"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\src\\app.module.ts": {
+    "mtime": 1778463717.126456,
+    "ast_hash": "243114b4b5a68bc4e2630661bf9922df",
+    "semantic_hash": "243114b4b5a68bc4e2630661bf9922df"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\src\\app.service.ts": {
+    "mtime": 1777937638.5809178,
+    "ast_hash": "08e985e831bca61f6be89c5c2ecef2fa",
+    "semantic_hash": "08e985e831bca61f6be89c5c2ecef2fa"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\src\\main.ts": {
+    "mtime": 1777937846.272503,
+    "ast_hash": "a7c70cd95e53154ce657e928e7a45bdb",
+    "semantic_hash": "a7c70cd95e53154ce657e928e7a45bdb"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\src\\supabase.service.ts": {
+    "mtime": 1777937815.9698505,
+    "ast_hash": "400f429fba74998dc2edaeddf0df6522",
+    "semantic_hash": "400f429fba74998dc2edaeddf0df6522"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\src\\game-data\\game-data.controller.ts": {
+    "mtime": 1778003866.9124956,
+    "ast_hash": "3c314250df0aa176f387a170ae88daa8",
+    "semantic_hash": "3c314250df0aa176f387a170ae88daa8"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\src\\game-data\\game-data.service.ts": {
+    "mtime": 1778463984.2665246,
+    "ast_hash": "0b43b6505f294a70407bdf26f643e04d",
+    "semantic_hash": "0b43b6505f294a70407bdf26f643e04d"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\src\\game-snapshot\\game-snapshot.controller.ts": {
+    "mtime": 1778463705.6776638,
+    "ast_hash": "0c3d3fc92108c0bffaf5984c417f98fd",
+    "semantic_hash": "0c3d3fc92108c0bffaf5984c417f98fd"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\src\\game-snapshot\\game-snapshot.service.ts": {
+    "mtime": 1778463697.691039,
+    "ast_hash": "891f95ae980040f50ab21ef8f50c7732",
+    "semantic_hash": "891f95ae980040f50ab21ef8f50c7732"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\test\\app.e2e-spec.ts": {
+    "mtime": 1777937638.582435,
+    "ast_hash": "668094bf268e0395763312620e5638e8",
+    "semantic_hash": "668094bf268e0395763312620e5638e8"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\test\\jest-e2e.json": {
+    "mtime": 1777937638.5819254,
+    "ast_hash": "707a50895cb1c565825637916e9cf290",
+    "semantic_hash": "707a50895cb1c565825637916e9cf290"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\eslint.config.mjs": {
+    "mtime": 1777931332.260459,
+    "ast_hash": "dfa1f5f6a7037bf39dc510f30b180002",
+    "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\next-env.d.ts": {
+    "mtime": 1778465205.535825,
+    "ast_hash": "d0f8375ae1199dc7acd3977fc33b78b8",
+    "semantic_hash": "d0f8375ae1199dc7acd3977fc33b78b8"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\next.config.ts": {
+    "mtime": 1777931332.4145184,
+    "ast_hash": "9b77af189a21a7a64e4bd7a426f64176",
+    "semantic_hash": "9b77af189a21a7a64e4bd7a426f64176"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\package.json": {
+    "mtime": 1778352158.6932497,
+    "ast_hash": "f22c55cb9c8abd07d39b401092402cf8",
+    "semantic_hash": "f22c55cb9c8abd07d39b401092402cf8"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\postcss.config.mjs": {
+    "mtime": 1777931332.2816184,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\tsconfig.json": {
+    "mtime": 1777937672.3343754,
+    "ast_hash": "ee17fd1c97c735e9f3564e3f5251f125",
+    "semantic_hash": "ee17fd1c97c735e9f3564e3f5251f125"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\app\\layout.tsx": {
+    "mtime": 1778352173.0436769,
+    "ast_hash": "42e95321a0c6607f13af625ee1a87f26",
+    "semantic_hash": "42e95321a0c6607f13af625ee1a87f26"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\app\\page.tsx": {
+    "mtime": 1777937783.242134,
+    "ast_hash": "c48eef20596ea8a00e10a63ae2cac102",
+    "semantic_hash": "c48eef20596ea8a00e10a63ae2cac102"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\app\\dashboard\\page.tsx": {
+    "mtime": 1778003524.0923736,
+    "ast_hash": "7f6519b43aca457e76086ef0c66bc41f",
+    "semantic_hash": "7f6519b43aca457e76086ef0c66bc41f"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\AdvancedSections.tsx": {
+    "mtime": 1778356512.8896573,
+    "ast_hash": "aee84594ee333c1b2398e813c95ed5ce",
+    "semantic_hash": "aee84594ee333c1b2398e813c95ed5ce"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\CivWizardModal.tsx": {
+    "mtime": 1778464138.3410137,
+    "ast_hash": "131d2d8c0177a706f20f073458710713",
+    "semantic_hash": "131d2d8c0177a706f20f073458710713"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\Dashboard.tsx": {
+    "mtime": 1778465091.3801813,
+    "ast_hash": "600f8db1babd4a8917435aff8c6b64ed",
+    "semantic_hash": "600f8db1babd4a8917435aff8c6b64ed"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\EntityModal.tsx": {
+    "mtime": 1778465027.6789887,
+    "ast_hash": "866c1d79724b2b884156fcf28f93c979",
+    "semantic_hash": "866c1d79724b2b884156fcf28f93c979"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\OverrideModal.tsx": {
+    "mtime": 1778356064.885025,
+    "ast_hash": "ff5caa67efc185e67d501ef37af5b6c5",
+    "semantic_hash": "ff5caa67efc185e67d501ef37af5b6c5"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\SpriteConfiguratorModal.tsx": {
+    "mtime": 1778355626.995153,
+    "ast_hash": "02bcb2e1be21423bc8cbb6b40393a14f",
+    "semantic_hash": "02bcb2e1be21423bc8cbb6b40393a14f"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\SpriteGenerator.tsx": {
+    "mtime": 1778353993.4591658,
+    "ast_hash": "32104ede8383e22d9b2c38ee1cb0505b",
+    "semantic_hash": "32104ede8383e22d9b2c38ee1cb0505b"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\TechTreeEditor.tsx": {
+    "mtime": 1778464242.4007006,
+    "ast_hash": "c653456d80dd15821b4b67b9ec1d15e2",
+    "semantic_hash": "c653456d80dd15821b4b67b9ec1d15e2"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\lib\\api.ts": {
+    "mtime": 1777940039.8121407,
+    "ast_hash": "17d47d8b31d365900ae013276e38c9e5",
+    "semantic_hash": "17d47d8b31d365900ae013276e38c9e5"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\lib\\backgroundRemover.ts": {
+    "mtime": 1778352068.1991086,
+    "ast_hash": "96a867a3255a77de714c58c2c3dcb848",
+    "semantic_hash": "96a867a3255a77de714c58c2c3dcb848"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\lib\\spriteAI.ts": {
+    "mtime": 1778353945.7735202,
+    "ast_hash": "a19ecd5ee49d17074d84399da64d9324",
+    "semantic_hash": "a19ecd5ee49d17074d84399da64d9324"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\lib\\supabaseStorage.ts": {
+    "mtime": 1778352001.0725293,
+    "ast_hash": "0e6c32a8619d6597a471920151d65f46",
+    "semantic_hash": "0e6c32a8619d6597a471920151d65f46"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\package_config.json": {
+    "mtime": 1778465935.4988568,
+    "ast_hash": "8b01028bf1f975f1139c35194c56a7c8",
+    "semantic_hash": "8b01028bf1f975f1139c35194c56a7c8"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\package_graph.json": {
+    "mtime": 1778465935.499409,
+    "ast_hash": "1c8bca079b9394e105cd27edfdb464b7",
+    "semantic_hash": "1c8bca079b9394e105cd27edfdb464b7"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\dartpad\\web_plugin_registrant.dart": {
+    "mtime": 1778465778.2897675,
+    "ast_hash": "27825adf226064acfaba57c1e40019b2",
+    "semantic_hash": "27825adf226064acfaba57c1e40019b2"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\flutter_build\\dart_plugin_registrant.dart": {
+    "mtime": 1777592148.827781,
+    "ast_hash": "93433d334a17779e03a151bf513d64a0",
+    "semantic_hash": "93433d334a17779e03a151bf513d64a0"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\flutter_build\\06e83407dfc404cceda9b0aa371e9809\\dart_build_result.json": {
+    "mtime": 1777690951.1790974,
+    "ast_hash": "af0fbbdc95243838ff18634f7d49d54c",
+    "semantic_hash": "af0fbbdc95243838ff18634f7d49d54c"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\flutter_build\\06e83407dfc404cceda9b0aa371e9809\\native_assets.json": {
+    "mtime": 1777690951.1964025,
+    "ast_hash": "f3a664e105b4f792c6c7fe4e4d22c398",
+    "semantic_hash": "f3a664e105b4f792c6c7fe4e4d22c398"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\flutter_build\\06e83407dfc404cceda9b0aa371e9809\\outputs.json": {
+    "mtime": 1777928115.5113168,
+    "ast_hash": "6d9e1b93d7aa0eaf9701591dc63da944",
+    "semantic_hash": "6d9e1b93d7aa0eaf9701591dc63da944"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\flutter_build\\1195aef559544332b18e11c45644ae1b\\dart_build_result.json": {
+    "mtime": 1777592264.1948273,
+    "ast_hash": "9c3831656d9e0f6d9b08ce61ba4c25a2",
+    "semantic_hash": "9c3831656d9e0f6d9b08ce61ba4c25a2"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\flutter_build\\1195aef559544332b18e11c45644ae1b\\native_assets.json": {
+    "mtime": 1777592264.2186801,
+    "ast_hash": "f3a664e105b4f792c6c7fe4e4d22c398",
+    "semantic_hash": "f3a664e105b4f792c6c7fe4e4d22c398"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\flutter_build\\1195aef559544332b18e11c45644ae1b\\outputs.json": {
+    "mtime": 1777609961.9858596,
+    "ast_hash": "6d9e1b93d7aa0eaf9701591dc63da944",
+    "semantic_hash": "6d9e1b93d7aa0eaf9701591dc63da944"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\flutter_build\\85ea687bd3af66622c350f332a7c60ce\\dart_build_result.json": {
+    "mtime": 1778467083.1476696,
+    "ast_hash": "1aa4bcb7568719994e49c16b0756ac50",
+    "semantic_hash": "1aa4bcb7568719994e49c16b0756ac50"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\flutter_build\\85ea687bd3af66622c350f332a7c60ce\\native_assets.json": {
+    "mtime": 1778467083.1571276,
+    "ast_hash": "f3a664e105b4f792c6c7fe4e4d22c398",
+    "semantic_hash": "f3a664e105b4f792c6c7fe4e4d22c398"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\flutter_build\\85ea687bd3af66622c350f332a7c60ce\\outputs.json": {
+    "mtime": 1778475834.211774,
+    "ast_hash": "1cc7c58aef5e6e5e5dbb27143f9f1abf",
+    "semantic_hash": "1cc7c58aef5e6e5e5dbb27143f9f1abf"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\flutter_build\\b1f2b02a42bc81fb291f124ac52881e5\\dart_build_result.json": {
+    "mtime": 1777520110.095474,
+    "ast_hash": "9fbdd5b2175d01584602a93dc76ab3ed",
+    "semantic_hash": "9fbdd5b2175d01584602a93dc76ab3ed"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\flutter_build\\b1f2b02a42bc81fb291f124ac52881e5\\native_assets.json": {
+    "mtime": 1777520110.1218417,
+    "ast_hash": "f3a664e105b4f792c6c7fe4e4d22c398",
+    "semantic_hash": "f3a664e105b4f792c6c7fe4e4d22c398"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\flutter_build\\b1f2b02a42bc81fb291f124ac52881e5\\outputs.json": {
+    "mtime": 1777520117.8987424,
+    "ast_hash": "66ef329b657522e633c45f211581f33e",
+    "semantic_hash": "66ef329b657522e633c45f211581f33e"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\hooks_runner\\objective_c\\196c15e30a\\dependencies.dependencies_hash_file.json": {
+    "mtime": 1778471323.4539523,
+    "ast_hash": "a03d579688c0427b3ae494873b107311",
+    "semantic_hash": "a03d579688c0427b3ae494873b107311"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\hooks_runner\\objective_c\\196c15e30a\\hook.dependencies_hash_file.json": {
+    "mtime": 1778467082.970739,
+    "ast_hash": "ad78bd335379826c3196b9806ceebc3f",
+    "semantic_hash": "ad78bd335379826c3196b9806ceebc3f"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\hooks_runner\\objective_c\\196c15e30a\\input.json": {
+    "mtime": 1778471323.270556,
+    "ast_hash": "0e55ffa2936266a5b1bef4fc80a6cc84",
+    "semantic_hash": "0e55ffa2936266a5b1bef4fc80a6cc84"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\hooks_runner\\objective_c\\196c15e30a\\output.json": {
+    "mtime": 1778471323.4095612,
+    "ast_hash": "944b40b831955eccd35a948dbc3ada99",
+    "semantic_hash": "944b40b831955eccd35a948dbc3ada99"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\hooks_runner\\objective_c\\2578b5eb1e\\dependencies.dependencies_hash_file.json": {
+    "mtime": 1777520211.2831016,
+    "ast_hash": "a03d579688c0427b3ae494873b107311",
+    "semantic_hash": "a03d579688c0427b3ae494873b107311"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\hooks_runner\\objective_c\\2578b5eb1e\\hook.dependencies_hash_file.json": {
+    "mtime": 1777520109.831611,
+    "ast_hash": "9a611e9fb6fc7dc84e358cdd679e7fed",
+    "semantic_hash": "9a611e9fb6fc7dc84e358cdd679e7fed"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\hooks_runner\\objective_c\\2578b5eb1e\\input.json": {
+    "mtime": 1777520211.0972433,
+    "ast_hash": "4c42e5a16e0636601dd30c86b0563741",
+    "semantic_hash": "4c42e5a16e0636601dd30c86b0563741"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\hooks_runner\\objective_c\\2578b5eb1e\\output.json": {
+    "mtime": 1777520211.2499037,
+    "ast_hash": "443733fe345a485cb98e2c4e15e100eb",
+    "semantic_hash": "443733fe345a485cb98e2c4e15e100eb"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\hooks_runner\\objective_c\\337ce265dc\\dependencies.dependencies_hash_file.json": {
+    "mtime": 1778465943.9193392,
+    "ast_hash": "a03d579688c0427b3ae494873b107311",
+    "semantic_hash": "a03d579688c0427b3ae494873b107311"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\hooks_runner\\objective_c\\337ce265dc\\hook.dependencies_hash_file.json": {
+    "mtime": 1778465943.752214,
+    "ast_hash": "ad78bd335379826c3196b9806ceebc3f",
+    "semantic_hash": "ad78bd335379826c3196b9806ceebc3f"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\hooks_runner\\objective_c\\337ce265dc\\input.json": {
+    "mtime": 1778465943.753751,
+    "ast_hash": "e06d42acf93cba27d90c64dce3cb20ce",
+    "semantic_hash": "e06d42acf93cba27d90c64dce3cb20ce"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\.dart_tool\\hooks_runner\\objective_c\\337ce265dc\\output.json": {
+    "mtime": 1778465943.88141,
+    "ast_hash": "ae66df14b22a68a3172d22c89f878930",
+    "semantic_hash": "ae66df14b22a68a3172d22c89f878930"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\android\\build.gradle.kts": {
+    "mtime": 1777519502.43912,
+    "ast_hash": "803fe22651fbe96ed401eb0b66a492d1",
+    "semantic_hash": "803fe22651fbe96ed401eb0b66a492d1"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\android\\gradlew": {
+    "mtime": 1777519502.7912881,
+    "ast_hash": "7f1cd7eb3f75a1dc85cd37753972a6e2",
+    "semantic_hash": "7f1cd7eb3f75a1dc85cd37753972a6e2"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\android\\settings.gradle.kts": {
+    "mtime": 1777524982.9860778,
+    "ast_hash": "d86b4ec0a4ed83f0e2255061523b3160",
+    "semantic_hash": "d86b4ec0a4ed83f0e2255061523b3160"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\android\\app\\build.gradle.kts": {
+    "mtime": 1777524988.4780333,
+    "ast_hash": "036f712c41cb652221b6197fa4471204",
+    "semantic_hash": "036f712c41cb652221b6197fa4471204"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\android\\app\\google-services.json": {
+    "mtime": 1777524975.920277,
+    "ast_hash": "5dcf0fcaeb926dca5dd74a12c4106169",
+    "semantic_hash": "5dcf0fcaeb926dca5dd74a12c4106169"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\android\\app\\src\\main\\java\\io\\flutter\\plugins\\GeneratedPluginRegistrant.java": {
+    "mtime": 1777592116.658906,
+    "ast_hash": "33816130f22fa7c581f6ee856e5c7394",
+    "semantic_hash": "33816130f22fa7c581f6ee856e5c7394"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\android\\app\\src\\main\\kotlin\\com\\example\\rts_isometric_game\\MainActivity.kt": {
+    "mtime": 1777519502.4360752,
+    "ast_hash": "48dffbe39eac811ad3284352a374c9fa",
+    "semantic_hash": "48dffbe39eac811ad3284352a374c9fa"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\ios\\Flutter\\flutter_export_environment.sh": {
+    "mtime": 1778465778.2036276,
+    "ast_hash": "1916541d3dae0dfe7d4f6db8edf50358",
+    "semantic_hash": "1916541d3dae0dfe7d4f6db8edf50358"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\ios\\Flutter\\ephemeral\\flutter_lldb_helper.py": {
+    "mtime": 1778465778.1973906,
+    "ast_hash": "98fc75412162af387e2e3461e4e58094",
+    "semantic_hash": "98fc75412162af387e2e3461e4e58094"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\ios\\Runner\\AppDelegate.swift": {
+    "mtime": 1777519243.7387688,
+    "ast_hash": "9e1de9c329a3fe4931876063de95132b",
+    "semantic_hash": "9e1de9c329a3fe4931876063de95132b"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\ios\\Runner\\GeneratedPluginRegistrant.h": {
+    "mtime": 1777519503.5979114,
+    "ast_hash": "decb9041b5e91a07e66f4664e5dac408",
+    "semantic_hash": "decb9041b5e91a07e66f4664e5dac408"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\ios\\Runner\\GeneratedPluginRegistrant.m": {
+    "mtime": 1777592116.6836245,
+    "ast_hash": "7e7f907c489cbb59ba24f0346d1f9b6b",
+    "semantic_hash": "7e7f907c489cbb59ba24f0346d1f9b6b"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\ios\\Runner\\Runner-Bridging-Header.h": {
+    "mtime": 1777519243.753014,
+    "ast_hash": "7ad7b5cea096132de13ba526b2b9efbe",
+    "semantic_hash": "7ad7b5cea096132de13ba526b2b9efbe"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\ios\\Runner\\SceneDelegate.swift": {
+    "mtime": 1777519243.7535346,
+    "ast_hash": "0c3e86af131f6a9e547c80b5ed058914",
+    "semantic_hash": "0c3e86af131f6a9e547c80b5ed058914"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Contents.json": {
+    "mtime": 1777519243.7387688,
+    "ast_hash": "31a08e429403e265cabfb31b3d65f049",
+    "semantic_hash": "31a08e429403e265cabfb31b3d65f049"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\ios\\Runner\\Assets.xcassets\\LaunchImage.imageset\\Contents.json": {
+    "mtime": 1777519243.7481623,
+    "ast_hash": "b9e927ac17345f2d5f052fe68a3487f9",
+    "semantic_hash": "b9e927ac17345f2d5f052fe68a3487f9"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\ios\\RunnerTests\\RunnerTests.swift": {
+    "mtime": 1777519502.647764,
+    "ast_hash": "24e5d095048eb86c30423f4e04b6e57b",
+    "semantic_hash": "24e5d095048eb86c30423f4e04b6e57b"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\firebase_options.dart": {
+    "mtime": 1777525022.241572,
+    "ast_hash": "4dd0629b3216a539b4975dd10d6ebe30",
+    "semantic_hash": "4dd0629b3216a539b4975dd10d6ebe30"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\main.dart": {
+    "mtime": 1778463791.6167085,
+    "ast_hash": "27cef434f4022483fe6cee25970a5b48",
+    "semantic_hash": "27cef434f4022483fe6cee25970a5b48"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\game_state.dart": {
+    "mtime": 1778476218.9632814,
+    "ast_hash": "40a55769606d8bc7f043efddf0cc9340",
+    "semantic_hash": "40a55769606d8bc7f043efddf0cc9340"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\map_generator.dart": {
+    "mtime": 1777928602.2668538,
+    "ast_hash": "b6fea0e96169ea00aa95d1fd3ee6ded7",
+    "semantic_hash": "b6fea0e96169ea00aa95d1fd3ee6ded7"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\ai\\ai_director.dart": {
+    "mtime": 1777709296.850899,
+    "ast_hash": "516ed62568a3ff5ccd8fc258b4de2060",
+    "semantic_hash": "516ed62568a3ff5ccd8fc258b4de2060"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\ai\\city_planner.dart": {
+    "mtime": 1777935026.1105697,
+    "ast_hash": "30ffa37452990b8234e9a37117d41a08",
+    "semantic_hash": "30ffa37452990b8234e9a37117d41a08"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\ai\\formation_manager.dart": {
+    "mtime": 1777709282.0526261,
+    "ast_hash": "2dc165a4fe2c12d8de1a6984e27170fb",
+    "semantic_hash": "2dc165a4fe2c12d8de1a6984e27170fb"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\ai\\pathfinding_manager.dart": {
+    "mtime": 1777933616.9828806,
+    "ast_hash": "092e1a78bd6573141c3f8ca53259c97f",
+    "semantic_hash": "092e1a78bd6573141c3f8ca53259c97f"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\ai\\unit_fsm.dart": {
+    "mtime": 1777708482.9489868,
+    "ast_hash": "c20cea66d5f23e275e7687078b568c67",
+    "semantic_hash": "c20cea66d5f23e275e7687078b568c67"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\ai\\worker_ai.dart": {
+    "mtime": 1777708484.966905,
+    "ast_hash": "4298326d2972901761f71ca251a75138",
+    "semantic_hash": "4298326d2972901761f71ca251a75138"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\models\\game_models.dart": {
+    "mtime": 1778473185.440845,
+    "ast_hash": "ba77b331eb77cd6bb9b7f29ac7e7aba6",
+    "semantic_hash": "ba77b331eb77cd6bb9b7f29ac7e7aba6"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\rendering\\isometric_renderer.dart": {
+    "mtime": 1778475273.1392949,
+    "ast_hash": "6eef549bb8fa197a1df0164858861450",
+    "semantic_hash": "6eef549bb8fa197a1df0164858861450"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\screens\\game_config_screen.dart": {
+    "mtime": 1778465856.5034077,
+    "ast_hash": "d1fd056df9d5844724115d19fc4a702c",
+    "semantic_hash": "d1fd056df9d5844724115d19fc4a702c"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\screens\\game_screen.dart": {
+    "mtime": 1777924324.7383595,
+    "ast_hash": "93e3663dcc53cd3669c0875a48eb28be",
+    "semantic_hash": "93e3663dcc53cd3669c0875a48eb28be"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\screens\\main_menu.dart": {
+    "mtime": 1777610078.8611746,
+    "ast_hash": "461ecdac7efc9fd745c6a282e55bdb49",
+    "semantic_hash": "461ecdac7efc9fd745c6a282e55bdb49"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\services\\auth_service.dart": {
+    "mtime": 1778465925.9978778,
+    "ast_hash": "b1abbe3050900510ae9015a869fdb540",
+    "semantic_hash": "b1abbe3050900510ae9015a869fdb540"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\services\\game_data_service.dart": {
+    "mtime": 1778475322.3491735,
+    "ast_hash": "92752dbc8c9651002c27f394d2d6c5ed",
+    "semantic_hash": "92752dbc8c9651002c27f394d2d6c5ed"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\services\\supabase_service.dart": {
+    "mtime": 1777525001.129243,
+    "ast_hash": "117735593312c5ff9f1e1d5e8cf27887",
+    "semantic_hash": "117735593312c5ff9f1e1d5e8cf27887"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\widgets\\pixel_button.dart": {
+    "mtime": 1777514637.9555683,
+    "ast_hash": "16d80ed0f7972ca2a98433b7119b25c8",
+    "semantic_hash": "16d80ed0f7972ca2a98433b7119b25c8"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\linux\\flutter\\generated_plugin_registrant.cc": {
+    "mtime": 1777592116.6672843,
+    "ast_hash": "638422954f06f3ff805e3bb23521f938",
+    "semantic_hash": "638422954f06f3ff805e3bb23521f938"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\linux\\flutter\\generated_plugin_registrant.h": {
+    "mtime": 1777519503.5818117,
+    "ast_hash": "d295462c9da9f7fef22dc86c34492318",
+    "semantic_hash": "d295462c9da9f7fef22dc86c34492318"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\linux\\runner\\main.cc": {
+    "mtime": 1777519243.7582853,
+    "ast_hash": "539395bcd63dba20afed0838d136189f",
+    "semantic_hash": "539395bcd63dba20afed0838d136189f"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\linux\\runner\\my_application.cc": {
+    "mtime": 1777519502.6655924,
+    "ast_hash": "87bac2c1ec9029e8119f0f6ffb61cb04",
+    "semantic_hash": "87bac2c1ec9029e8119f0f6ffb61cb04"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\linux\\runner\\my_application.h": {
+    "mtime": 1777519243.7588067,
+    "ast_hash": "ffa1a7c0a2ad45a2c14a921596516ff8",
+    "semantic_hash": "ffa1a7c0a2ad45a2c14a921596516ff8"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\macos\\Flutter\\GeneratedPluginRegistrant.swift": {
+    "mtime": 1777592116.6846395,
+    "ast_hash": "59e0bf52cd24b4ef36573785fc43eb1a",
+    "semantic_hash": "59e0bf52cd24b4ef36573785fc43eb1a"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\macos\\Flutter\\ephemeral\\flutter_export_environment.sh": {
+    "mtime": 1778465778.205791,
+    "ast_hash": "fdc4fa24666fcd76cbda08c236dbe792",
+    "semantic_hash": "fdc4fa24666fcd76cbda08c236dbe792"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\macos\\Runner\\AppDelegate.swift": {
+    "mtime": 1777519243.7678306,
+    "ast_hash": "4b52e0b89ebfef9baf45b04548c463d6",
+    "semantic_hash": "4b52e0b89ebfef9baf45b04548c463d6"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\macos\\Runner\\MainFlutterWindow.swift": {
+    "mtime": 1777519243.7762418,
+    "ast_hash": "93c22dae2d93f3dc1402e121901f582b",
+    "semantic_hash": "93c22dae2d93f3dc1402e121901f582b"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\macos\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Contents.json": {
+    "mtime": 1777519243.768896,
+    "ast_hash": "1d48e925145d4b573a3b5d7960a1c585",
+    "semantic_hash": "1d48e925145d4b573a3b5d7960a1c585"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\macos\\RunnerTests\\RunnerTests.swift": {
+    "mtime": 1777519502.7398252,
+    "ast_hash": "8059f5d27a19c556eeafb49b3f9b7bdd",
+    "semantic_hash": "8059f5d27a19c556eeafb49b3f9b7bdd"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\scratch\\analyze_braces.py": {
+    "mtime": 1777931486.5760405,
+    "ast_hash": "5713fca9cf95e07a42075da518dc62ef",
+    "semantic_hash": "5713fca9cf95e07a42075da518dc62ef"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\scratch\\analyze_braces_depth.py": {
+    "mtime": 1777931495.7352686,
+    "ast_hash": "ff4eb19d44c899c8c4a14042b437544f",
+    "semantic_hash": "ff4eb19d44c899c8c4a14042b437544f"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\scratch\\check_class_closure.py": {
+    "mtime": 1777931609.5667572,
+    "ast_hash": "fc8b4e6c6df04a29fdddfa900860dae9",
+    "semantic_hash": "fc8b4e6c6df04a29fdddfa900860dae9"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\scratch\\check_lines.py": {
+    "mtime": 1777931733.3454344,
+    "ast_hash": "0808c238622d83b650e6cc63521ea8fd",
+    "semantic_hash": "0808c238622d83b650e6cc63521ea8fd"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\scratch\\count_braces.py": {
+    "mtime": 1777931621.9529586,
+    "ast_hash": "b298cb21d09e944d7baa1fae828c5150",
+    "semantic_hash": "b298cb21d09e944d7baa1fae828c5150"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\scratch\\final_brace_check.py": {
+    "mtime": 1777931801.0781736,
+    "ast_hash": "9cddb8c6e4efbbfe62680782ff5b87a7",
+    "semantic_hash": "9cddb8c6e4efbbfe62680782ff5b87a7"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\scratch\\find_class_closure.py": {
+    "mtime": 1777931582.304502,
+    "ast_hash": "1e549d3a211a157aaa9d0e7e9f51fa54",
+    "semantic_hash": "1e549d3a211a157aaa9d0e7e9f51fa54"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\scratch\\find_first_negative.py": {
+    "mtime": 1777931601.7807207,
+    "ast_hash": "f63eb2b82bee41249dbd8c076d6bb2cc",
+    "semantic_hash": "f63eb2b82bee41249dbd8c076d6bb2cc"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\scratch\\find_negative_depth.py": {
+    "mtime": 1777931567.920948,
+    "ast_hash": "c99da2dad9ef14b0ca8b9cd207b7f4c4",
+    "semantic_hash": "c99da2dad9ef14b0ca8b9cd207b7f4c4"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\scratch\\trace_braces.py": {
+    "mtime": 1777931650.9510102,
+    "ast_hash": "0c12aa0b7ada35c98ac270981e2faf09",
+    "semantic_hash": "0c12aa0b7ada35c98ac270981e2faf09"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\scratch\\verify_depth_full.py": {
+    "mtime": 1777931633.8333,
+    "ast_hash": "8be814ec3dbc0a2334bb00229344f4fa",
+    "semantic_hash": "8be814ec3dbc0a2334bb00229344f4fa"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\sql\\schema.sql": {
+    "mtime": 1777690017.383819,
+    "ast_hash": "a7281c9bcafe37b59874d05680c5e69d",
+    "semantic_hash": "a7281c9bcafe37b59874d05680c5e69d"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\test\\engine_simulation_test.dart": {
+    "mtime": 1778471387.213226,
+    "ast_hash": "8113ecf2cccf5a1974834ef36ff60d9d",
+    "semantic_hash": "8113ecf2cccf5a1974834ef36ff60d9d"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\test\\widget_test.dart": {
+    "mtime": 1778472428.2473285,
+    "ast_hash": "e5cf8bb2590234832b07e99d7bcba926",
+    "semantic_hash": "e5cf8bb2590234832b07e99d7bcba926"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\web\\manifest.json": {
+    "mtime": 1777519502.7555606,
+    "ast_hash": "2db04d18da4054d8c989102bebb561bf",
+    "semantic_hash": "2db04d18da4054d8c989102bebb561bf"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\generated_plugin_registrant.cc": {
+    "mtime": 1777592116.6766822,
+    "ast_hash": "d2b28b8ed49c1ef0be78091df74bc073",
+    "semantic_hash": "d2b28b8ed49c1ef0be78091df74bc073"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\generated_plugin_registrant.h": {
+    "mtime": 1777519503.5903294,
+    "ast_hash": "0ea33875f9f8e118f9c2ded03e2e2835",
+    "semantic_hash": "0ea33875f9f8e118f9c2ded03e2e2835"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\flutter_export.h": {
+    "mtime": 1777690935.6034205,
+    "ast_hash": "51d6ddd086e800d34c1d143004c474fd",
+    "semantic_hash": "51d6ddd086e800d34c1d143004c474fd"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\flutter_messenger.h": {
+    "mtime": 1777690935.6044736,
+    "ast_hash": "9c15531692496dbfcb820431343d92fa",
+    "semantic_hash": "9c15531692496dbfcb820431343d92fa"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\flutter_plugin_registrar.h": {
+    "mtime": 1777690935.6044736,
+    "ast_hash": "205b172dd4be89df08a835c5afcd2c1a",
+    "semantic_hash": "205b172dd4be89df08a835c5afcd2c1a"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\flutter_texture_registrar.h": {
+    "mtime": 1777690935.605477,
+    "ast_hash": "4ffbfcf8b88a9690e82543b1761e81d5",
+    "semantic_hash": "4ffbfcf8b88a9690e82543b1761e81d5"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\flutter_windows.h": {
+    "mtime": 1777690935.6039267,
+    "ast_hash": "538863ede587e5ef3c7bb9b2bc9e6ea7",
+    "semantic_hash": "538863ede587e5ef3c7bb9b2bc9e6ea7"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\binary_messenger_impl.h": {
+    "mtime": 1777690936.7061,
+    "ast_hash": "286e55d651260380486c1ca7a2c44578",
+    "semantic_hash": "286e55d651260380486c1ca7a2c44578"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\byte_buffer_streams.h": {
+    "mtime": 1777690936.7081122,
+    "ast_hash": "0a33501e8af56a1390ab6f75e0f568d9",
+    "semantic_hash": "0a33501e8af56a1390ab6f75e0f568d9"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\core_implementations.cc": {
+    "mtime": 1777690936.6968067,
+    "ast_hash": "91cfe8e97858850acdbc8891453ce5bc",
+    "semantic_hash": "91cfe8e97858850acdbc8891453ce5bc"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\engine_method_result.cc": {
+    "mtime": 1777690936.6968067,
+    "ast_hash": "6172a3effcf1f354d756ff757377a576",
+    "semantic_hash": "6172a3effcf1f354d756ff757377a576"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\flutter_engine.cc": {
+    "mtime": 1777690936.6983562,
+    "ast_hash": "14c8cef2644702b8be3330109e5756a6",
+    "semantic_hash": "14c8cef2644702b8be3330109e5756a6"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\flutter_view_controller.cc": {
+    "mtime": 1777690936.6988695,
+    "ast_hash": "3c4959653a59ba03164e211059dc2652",
+    "semantic_hash": "3c4959653a59ba03164e211059dc2652"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\plugin_registrar.cc": {
+    "mtime": 1777690936.6973155,
+    "ast_hash": "3190b92da7033c643bf749e7f4266da8",
+    "semantic_hash": "3190b92da7033c643bf749e7f4266da8"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\standard_codec.cc": {
+    "mtime": 1777690936.6983562,
+    "ast_hash": "035f8af9a9a084e129ceef3fa0396c47",
+    "semantic_hash": "035f8af9a9a084e129ceef3fa0396c47"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\texture_registrar_impl.h": {
+    "mtime": 1777690936.7081122,
+    "ast_hash": "7ec35caedbfe35b37bd7aa66dab7219b",
+    "semantic_hash": "7ec35caedbfe35b37bd7aa66dab7219b"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\basic_message_channel.h": {
+    "mtime": 1777690936.699394,
+    "ast_hash": "45dd070af12cc7ab125d6ead5267f36c",
+    "semantic_hash": "45dd070af12cc7ab125d6ead5267f36c"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\binary_messenger.h": {
+    "mtime": 1777690936.6999166,
+    "ast_hash": "b313ec90af27dce06153c156a0cbb390",
+    "semantic_hash": "b313ec90af27dce06153c156a0cbb390"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\byte_streams.h": {
+    "mtime": 1777690936.700519,
+    "ast_hash": "00010cc0042e98ea973f4037a29a3ca0",
+    "semantic_hash": "00010cc0042e98ea973f4037a29a3ca0"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\dart_project.h": {
+    "mtime": 1777690936.7081122,
+    "ast_hash": "925d737f94c0c079c56eedb812ed4b8f",
+    "semantic_hash": "925d737f94c0c079c56eedb812ed4b8f"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\encodable_value.h": {
+    "mtime": 1777690936.700519,
+    "ast_hash": "ca5bf7ecc86138a058d535de1dfa811a",
+    "semantic_hash": "ca5bf7ecc86138a058d535de1dfa811a"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\engine_method_result.h": {
+    "mtime": 1777690936.7010348,
+    "ast_hash": "55b4be5728dfb16220b1bda5bdace3fe",
+    "semantic_hash": "55b4be5728dfb16220b1bda5bdace3fe"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\event_channel.h": {
+    "mtime": 1777690936.7016015,
+    "ast_hash": "143cf6f0acaa229d950d084c940cc77c",
+    "semantic_hash": "143cf6f0acaa229d950d084c940cc77c"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\event_sink.h": {
+    "mtime": 1777690936.702117,
+    "ast_hash": "b1b98c1cf40abd6a3c308182c4822476",
+    "semantic_hash": "b1b98c1cf40abd6a3c308182c4822476"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\event_stream_handler.h": {
+    "mtime": 1777690936.7031567,
+    "ast_hash": "62be5ae665a6b931d6dc9ac4b27d6c93",
+    "semantic_hash": "62be5ae665a6b931d6dc9ac4b27d6c93"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\event_stream_handler_functions.h": {
+    "mtime": 1777690936.7031567,
+    "ast_hash": "248c4e48231edda0bc7ac80722f15b53",
+    "semantic_hash": "248c4e48231edda0bc7ac80722f15b53"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\flutter_engine.h": {
+    "mtime": 1777690936.7081122,
+    "ast_hash": "2b2405abfa2cc54351b6ee6ad02585c0",
+    "semantic_hash": "2b2405abfa2cc54351b6ee6ad02585c0"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\flutter_view.h": {
+    "mtime": 1777690936.7081122,
+    "ast_hash": "33a6baf4984ec4c299c0b05cef6968ed",
+    "semantic_hash": "33a6baf4984ec4c299c0b05cef6968ed"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\flutter_view_controller.h": {
+    "mtime": 1777690936.7081122,
+    "ast_hash": "815f4a5fbad9381269e2c216507285cd",
+    "semantic_hash": "815f4a5fbad9381269e2c216507285cd"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\message_codec.h": {
+    "mtime": 1777690936.7036612,
+    "ast_hash": "b5013c9553dc459d5f91b8ec2bda3d0a",
+    "semantic_hash": "b5013c9553dc459d5f91b8ec2bda3d0a"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\method_call.h": {
+    "mtime": 1777690936.7036612,
+    "ast_hash": "a47afe801378afeffda4439e8cdb01ca",
+    "semantic_hash": "a47afe801378afeffda4439e8cdb01ca"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\method_channel.h": {
+    "mtime": 1777690936.7036612,
+    "ast_hash": "beeb4b0780233e226f899bddd220b682",
+    "semantic_hash": "beeb4b0780233e226f899bddd220b682"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\method_codec.h": {
+    "mtime": 1777690936.7036612,
+    "ast_hash": "1d712b93e2dd2e28cb67a55a8d484694",
+    "semantic_hash": "1d712b93e2dd2e28cb67a55a8d484694"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\method_result.h": {
+    "mtime": 1777690936.7050302,
+    "ast_hash": "e48c7b84b470630e810b6a0bc2d8e542",
+    "semantic_hash": "e48c7b84b470630e810b6a0bc2d8e542"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\method_result_functions.h": {
+    "mtime": 1777690936.7050302,
+    "ast_hash": "6bfbb61c519f63386a0fb55608dbea90",
+    "semantic_hash": "6bfbb61c519f63386a0fb55608dbea90"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\plugin_registrar.h": {
+    "mtime": 1777690936.70558,
+    "ast_hash": "2b81addd18be801eda539f1de332ce4e",
+    "semantic_hash": "2b81addd18be801eda539f1de332ce4e"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\plugin_registrar_windows.h": {
+    "mtime": 1777690936.7101257,
+    "ast_hash": "0bbbe470228d787a92d567a95faa2b33",
+    "semantic_hash": "0bbbe470228d787a92d567a95faa2b33"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\plugin_registry.h": {
+    "mtime": 1777690936.7061,
+    "ast_hash": "85c5071ca77f8687102dcae4f282388b",
+    "semantic_hash": "85c5071ca77f8687102dcae4f282388b"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\standard_codec_serializer.h": {
+    "mtime": 1777690936.7061,
+    "ast_hash": "09399c3c509a601a970f6efd340a2529",
+    "semantic_hash": "09399c3c509a601a970f6efd340a2529"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\standard_message_codec.h": {
+    "mtime": 1777690936.7061,
+    "ast_hash": "81df344828c7c48155ae22824eb61e50",
+    "semantic_hash": "81df344828c7c48155ae22824eb61e50"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\standard_method_codec.h": {
+    "mtime": 1777690936.7061,
+    "ast_hash": "4707587e759b2b655852fc0e989c9e70",
+    "semantic_hash": "4707587e759b2b655852fc0e989c9e70"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\include\\flutter\\texture_registrar.h": {
+    "mtime": 1777690936.7061,
+    "ast_hash": "ee739ab16ee0e2964edc9275a0379095",
+    "semantic_hash": "ee739ab16ee0e2964edc9275a0379095"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\runner\\flutter_window.cpp": {
+    "mtime": 1777519243.7838037,
+    "ast_hash": "2f463f9b7da67a2d692a012f9ea85e0c",
+    "semantic_hash": "2f463f9b7da67a2d692a012f9ea85e0c"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\runner\\flutter_window.h": {
+    "mtime": 1777519243.7864444,
+    "ast_hash": "7defcc89d4a26d56e801241d624d48fb",
+    "semantic_hash": "7defcc89d4a26d56e801241d624d48fb"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\runner\\main.cpp": {
+    "mtime": 1777519502.7689056,
+    "ast_hash": "6f0f52e02a934d88db320b4a774e0cc3",
+    "semantic_hash": "6f0f52e02a934d88db320b4a774e0cc3"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\runner\\resource.h": {
+    "mtime": 1777519243.7864444,
+    "ast_hash": "1ade5dd15e613479a15e8832ed276f2b",
+    "semantic_hash": "1ade5dd15e613479a15e8832ed276f2b"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\runner\\utils.cpp": {
+    "mtime": 1777519243.7864444,
+    "ast_hash": "432461b09d862a2f8dadf380ff0e34e5",
+    "semantic_hash": "432461b09d862a2f8dadf380ff0e34e5"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\runner\\utils.h": {
+    "mtime": 1777519243.7864444,
+    "ast_hash": "fd81e143f5614eb6fd75efe539002853",
+    "semantic_hash": "fd81e143f5614eb6fd75efe539002853"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\runner\\win32_window.cpp": {
+    "mtime": 1777519243.7864444,
+    "ast_hash": "571eb8234dbc2661be03aa5f2a4d2fca",
+    "semantic_hash": "571eb8234dbc2661be03aa5f2a4d2fca"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\windows\\runner\\win32_window.h": {
+    "mtime": 1777519243.7864444,
+    "ast_hash": "7569387d58711ab975940f4df3b4bcda",
+    "semantic_hash": "7569387d58711ab975940f4df3b4bcda"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\scratch\\check_stats.dart": {
+    "mtime": 1778471179.611955,
+    "ast_hash": "55dfbca533ab0e6875c8ea8f3ff8c692",
+    "semantic_hash": "55dfbca533ab0e6875c8ea8f3ff8c692"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\scratch\\find_init.dart": {
+    "mtime": 1778471205.010796,
+    "ast_hash": "3bd8e760085fd76066183a9a942b539d",
+    "semantic_hash": "3bd8e760085fd76066183a9a942b539d"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\scratch\\process_assets.py": {
+    "mtime": 1778474474.249071,
+    "ast_hash": "a3fd79837f378cff80bbbd1291c0a679",
+    "semantic_hash": "a3fd79837f378cff80bbbd1291c0a679"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\scratch\\update_sprites.sql": {
+    "mtime": 1778474569.9908965,
+    "ast_hash": "138688346dc3a34ee60806cfc399cba8",
+    "semantic_hash": "138688346dc3a34ee60806cfc399cba8"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\tools\\rembg_service\\server.py": {
+    "mtime": 1778353784.9034512,
+    "ast_hash": "0db96125012215d921b5cdb04d6a059a",
+    "semantic_hash": "0db96125012215d921b5cdb04d6a059a"
+  }
+}
