@@ -28,6 +28,9 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
   bool _showMinimap = true;
   int _activeTab = 0; // 0: Puntajes, 1: Evolución
   String _activeChartMetric = 'population'; // 'population' o 'resources'
+  Offset? _selectionStart;
+  Offset? _selectionEnd;
+  bool _isSelectingBox = false;
   Offset? _lastDragPos;
   double _lastScaleFactor = 1.0;
   final ValueNotifier<Offset> _joystickOffset = ValueNotifier<Offset>(Offset.zero);
@@ -115,6 +118,16 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
         return Stack(
           children: [
             _buildMapViewport(),
+            if (_isSelectingBox && _selectionStart != null && _selectionEnd != null)
+              IgnorePointer(
+                child: CustomPaint(
+                  size: Size.infinite,
+                  painter: _SelectionBoxPainter(
+                    start: _selectionStart!,
+                    end: _selectionEnd!,
+                  ),
+                ),
+              ),
             if (!isOver || showMap) ...[
               Positioned(top: 0, left: 0, right: 0, child: _buildTopHUD()),
               Positioned(
@@ -174,6 +187,17 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
   }
 
   // ─── MAP VIEWPORT ────────────────────────────────────────────────────
+  Offset tileToScreen(double col, double row, GameState gameState, Size viewportSize) {
+    final double tileW = 64.0;
+    final double tileH = 32.0;
+    final double worldX = (col - row) * (tileW / 2);
+    final double worldY = (col + row) * (tileH / 2);
+    return Offset(
+      (worldX - gameState.cameraX) + viewportSize.width / 2,
+      (worldY - gameState.cameraY) + viewportSize.height / 4,
+    );
+  }
+
   Widget _buildMapViewport() {
     return Listener(
       onPointerSignal: (event) {
@@ -183,23 +207,71 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
       },
       child: GestureDetector(
         onScaleStart: (d) {
-          _lastDragPos = d.focalPoint;
+          _lastDragPos = d.localFocalPoint;
           _lastScaleFactor = _gameState.zoom;
+          setState(() {
+            _selectionStart = d.localFocalPoint;
+            _selectionEnd = d.localFocalPoint;
+            _isSelectingBox = true;
+          });
         },
         onScaleUpdate: (d) {
-          // Pinch zoom
+          // Pinch zoom si hay más de 1 dedo
           if (d.pointerCount >= 2) {
+            setState(() {
+              _isSelectingBox = false; // Cancelar arrastre de caja
+            });
             final newZoom = _lastScaleFactor * d.scale;
             _gameState.adjustZoom(newZoom - _gameState.zoom);
-          }
-          // Pan de cámara
-          if (_lastDragPos != null) {
-            final delta = d.focalPoint - _lastDragPos!;
-            _gameState.moveCamera(-delta.dx / _gameState.zoom, -delta.dy / _gameState.zoom);
-            _lastDragPos = d.focalPoint;
+          } else if (_isSelectingBox) {
+            // Arrastrar selección si hay un solo dedo y está activo
+            setState(() {
+              _selectionEnd = d.localFocalPoint;
+            });
           }
         },
-        onScaleEnd: (_) => _lastDragPos = null,
+        onScaleEnd: (d) {
+          _lastDragPos = null;
+          if (_isSelectingBox) {
+            setState(() {
+              _isSelectingBox = false;
+            });
+            if (_selectionStart != null && _selectionEnd != null) {
+              final dragDistance = (_selectionEnd! - _selectionStart!).distance;
+              // Ignorar si el arrastre es demasiado pequeño (click normal)
+              if (dragDistance > 12.0) {
+                final rect = Rect.fromPoints(_selectionStart!, _selectionEnd!);
+                final size = MediaQuery.of(context).size;
+
+                // Obtener todas las unidades propias
+                final myUnits = _gameState.entities.where((e) =>
+                  e.playerIndex == _gameState.humanPlayerIndex && e.type == EntityType.unit
+                ).toList();
+
+                _gameState.selectedEntities.clear();
+
+                for (var unit in myUnits) {
+                  final pos = tileToScreen(unit.col, unit.row, _gameState, size);
+                  if (rect.contains(pos)) {
+                    _gameState.selectedEntities.add(unit);
+                  }
+                }
+                _gameState.triggerUiUpdate();
+              }
+            }
+            setState(() {
+              _selectionStart = null;
+              _selectionEnd = null;
+            });
+          }
+        },
+        onDoubleTap: () {
+          setState(() {
+            _gameState.selectedEntities.clear();
+            _gameState.selectTile(null);
+            _gameState.triggerUiUpdate();
+          });
+        },
         onTapUp: (d) {
           final size = MediaQuery.of(context).size;
           final tile = screenToTile(d.localPosition, _gameState, size);
@@ -1621,4 +1693,35 @@ class RtsTimelineChartPainter extends CustomPainter {
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
 }
+
+class _SelectionBoxPainter extends CustomPainter {
+  final Offset start;
+  final Offset end;
+
+  _SelectionBoxPainter({required this.start, required this.end});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final rect = Rect.fromPoints(start, end);
+
+    // Relleno dorado suave traslúcido
+    final fillPaint = Paint()
+      ..color = const Color(0xFFFFD700).withOpacity(0.12)
+      ..style = PaintingStyle.fill;
+    canvas.drawRect(rect, fillPaint);
+
+    // Contorno dorado brillante estilo neon
+    final borderPaint = Paint()
+      ..color = const Color(0xFFFFD700)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1.5;
+    canvas.drawRect(rect, borderPaint);
+  }
+
+  @override
+  bool shouldRepaint(covariant _SelectionBoxPainter oldDelegate) {
+    return oldDelegate.start != start || oldDelegate.end != end;
+  }
+}
+
 
