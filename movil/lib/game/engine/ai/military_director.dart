@@ -58,7 +58,7 @@ class MilitaryDirector {
         if (spot != null) {
           state.playerResources[pIdx].wood -= 100;
           spot.isWalkable = false;
-          state.entities.add(GameEntity(
+          state.addBuildingEntity(pIdx, GameEntity(
             id: 'barracks_${pIdx}_${rand.nextInt(99999)}', playerIndex: pIdx, type: EntityType.building, name: barracksName,
             col: spot.col.toDouble(), row: spot.row.toDouble(), hp: 1, maxHp: entityBaseStats[barracksName]?.maxHp ?? 100,
           ));
@@ -77,7 +77,7 @@ class MilitaryDirector {
         if (spot != null) {
           state.playerResources[pIdx].wood -= 150;
           spot.isWalkable = false;
-          state.entities.add(GameEntity(id: 'archery_${pIdx}_${rand.nextInt(99999)}', playerIndex: pIdx, type: EntityType.building, name: archeryName, col: spot.col.toDouble(), row: spot.row.toDouble(), hp: 1, maxHp: entityBaseStats[archeryName]?.maxHp ?? 100));
+          state.addBuildingEntity(pIdx, GameEntity(id: 'archery_${pIdx}_${rand.nextInt(99999)}', playerIndex: pIdx, type: EntityType.building, name: archeryName, col: spot.col.toDouble(), row: spot.row.toDouble(), hp: 1, maxHp: entityBaseStats[archeryName]?.maxHp ?? 100));
           return true;
         }
       }
@@ -93,7 +93,7 @@ class MilitaryDirector {
         if (spot != null) {
           state.playerResources[pIdx].wood -= 175;
           spot.isWalkable = false;
-          state.entities.add(GameEntity(id: 'stable_${pIdx}_${rand.nextInt(99999)}', playerIndex: pIdx, type: EntityType.building, name: stableName, col: spot.col.toDouble(), row: spot.row.toDouble(), hp: 1, maxHp: entityBaseStats[stableName]?.maxHp ?? 100));
+          state.addBuildingEntity(pIdx, GameEntity(id: 'stable_${pIdx}_${rand.nextInt(99999)}', playerIndex: pIdx, type: EntityType.building, name: stableName, col: spot.col.toDouble(), row: spot.row.toDouble(), hp: 1, maxHp: entityBaseStats[stableName]?.maxHp ?? 100));
           return true;
         }
       }

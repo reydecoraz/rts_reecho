@@ -372,3 +372,49 @@ class Projectile {
   }
 }
 
+class PlayerStats {
+  final int playerIndex;
+  final String playerName;
+  final String civId;
+  final String colorHex;
+
+  int woodGathered = 0;
+  int foodGathered = 0;
+  int goldGathered = 0;
+  int stoneGathered = 0;
+
+  int unitsTrained = 0;
+  int unitsKilled = 0;
+  int buildingsBuilt = 0;
+  int buildingsDestroyed = 0;
+
+  PlayerStats({
+    required this.playerIndex,
+    required this.playerName,
+    required this.civId,
+    required this.colorHex,
+  });
+
+  int get economyScore =>
+      ((woodGathered + foodGathered + goldGathered + stoneGathered) ~/ 10) +
+      (unitsTrained * 5);
+
+  int get militaryScore =>
+      (unitsKilled * 15) + (buildingsDestroyed * 40);
+
+  int get totalScore => economyScore + militaryScore;
+}
+
+class TimelineSnapshot {
+  final double elapsedSeconds;
+  final List<int> populations; // index coincide con playerIndex
+  final List<int> totalResources; // index coincide con playerIndex (wood + food + gold + stone)
+
+  TimelineSnapshot({
+    required this.elapsedSeconds,
+    required this.populations,
+    required this.totalResources,
+  });
+}
+
+

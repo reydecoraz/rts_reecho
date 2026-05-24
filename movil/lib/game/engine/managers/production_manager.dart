@@ -42,6 +42,9 @@ class ProductionManager {
           }
 
           state.entities.add(newUnit);
+          if (pIdx >= 0 && pIdx < state.playerStats.length) {
+            state.playerStats[pIdx].unitsTrained++;
+          }
           building.productionName = null;
         }
       }

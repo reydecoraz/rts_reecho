@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:ui' as ui;
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -25,6 +26,8 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
   Timer? _gameTimer;
   bool _isPaused = false;
   bool _showMinimap = true;
+  int _activeTab = 0; // 0: Puntajes, 1: Evolución
+  String _activeChartMetric = 'population'; // 'population' o 'resources'
   Offset? _lastDragPos;
   double _lastScaleFactor = 1.0;
   final ValueNotifier<Offset> _joystickOffset = ValueNotifier<Offset>(Offset.zero);
@@ -102,36 +105,71 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
     );
   }
 
-  // ─── GAME VIEW ───────────────────────────────────────────────────────
   Widget _buildGame() {
-    return Stack(
-      children: [
-        // Mapa isométrico — FUERA de cualquier Consumer/ListenableBuilder
-        // para que el GestureDetector no se recree al mover cámara
-        _buildMapViewport(),
-        // HUD — usa ListenableBuilder para actualizar solo lo necesario
-        Positioned(top: 0, left: 0, right: 0, child: _buildTopHUD()),
-        // Panel lateral izquierdo de registro de eventos
-        Positioned(
-          top: 52,
-          left: 6,
-          bottom: 160,
-          width: 170,
-          child: _buildEventLog(),
-        ),
-        // Info de selección (Entidad o Casilla)
-        ListenableBuilder(
-          listenable: _gameState,
-          builder: (_, __) {
-            return _buildSelectionInfo();
-          },
-        ),
-        Positioned(bottom: 0, left: 0, right: 0, child: _buildBottomBar()),
-        Positioned(bottom: 6, left: 6, child: _buildJoystick()),
-        if (_showMinimap)
-          Positioned(bottom: 6, right: 6, child: _buildMinimap()),
-        if (_isPaused) _buildPauseOverlay(),
-      ],
+    return ListenableBuilder(
+      listenable: _gameState,
+      builder: (context, _) {
+        final isOver = _gameState.isGameOver;
+        final showMap = _gameState.showPostGameMap;
+
+        return Stack(
+          children: [
+            _buildMapViewport(),
+            if (!isOver || showMap) ...[
+              Positioned(top: 0, left: 0, right: 0, child: _buildTopHUD()),
+              Positioned(
+                top: 52,
+                left: 6,
+                bottom: 160,
+                width: 170,
+                child: _buildEventLog(),
+              ),
+              _buildSelectionInfo(),
+              Positioned(bottom: 0, left: 0, right: 0, child: _buildBottomBar()),
+              Positioned(bottom: 6, left: 6, child: _buildJoystick()),
+              if (_showMinimap)
+                Positioned(bottom: 6, right: 6, child: _buildMinimap()),
+            ],
+            if (_isPaused && (!isOver || showMap)) _buildPauseOverlay(),
+            if (isOver && showMap)
+              Positioned(
+                top: 52,
+                left: 0,
+                right: 0,
+                child: Center(
+                  child: GestureDetector(
+                    onTap: () {
+                      _gameState.showPostGameMap = false;
+                    },
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      decoration: BoxDecoration(
+                        color: Colors.black.withOpacity(0.85),
+                        border: Border.all(color: const Color(0xFFFFD700), width: 1.5),
+                        borderRadius: BorderRadius.circular(20),
+                        boxShadow: [
+                          BoxShadow(
+                            color: const Color(0xFFFFD700).withOpacity(0.2),
+                            blurRadius: 8,
+                            spreadRadius: 1,
+                          ),
+                        ],
+                      ),
+                      child: Text(
+                        'VOLVER A PUNTUACIONES',
+                        style: GoogleFonts.pressStart2p(
+                          color: const Color(0xFFFFD700),
+                          fontSize: 8,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            if (isOver && !showMap) _buildGameOverOverlay(),
+          ],
+        );
+      },
     );
   }
 
@@ -788,6 +826,312 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
     ));
   }
 
+  // ─── FIN DE PARTIDA / GAME OVER ──────────────────────────────────────
+  Widget _buildGameOverOverlay() {
+    final isVictory = _gameState.winnerPlayerIndex == _gameState.humanPlayerIndex;
+    final title = isVictory ? '¡VICTORIA!' : '¡DERROTA!';
+    final titleColor = isVictory ? const Color(0xFFFFD700) : const Color(0xFFE94560);
+    final subtitle = isVictory ? 'HAS VENCIDO A TUS ENEMIGOS' : 'TU CENTRO URBANO HA CAÍDO';
+    
+    return Scaffold(
+      backgroundColor: Colors.transparent,
+      body: BackdropFilter(
+        filter: ui.ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
+        child: Container(
+          color: Colors.black.withOpacity(0.8),
+          child: Center(
+            child: Container(
+              width: MediaQuery.of(context).size.width * 0.92,
+              height: MediaQuery.of(context).size.height * 0.90,
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: const Color(0xFF0F0F1E).withOpacity(0.9),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: const Color(0xFFFFD700).withOpacity(0.7), width: 2),
+                boxShadow: [
+                  BoxShadow(
+                    color: titleColor.withOpacity(0.25),
+                    blurRadius: 20,
+                    spreadRadius: 2,
+                  ),
+                ],
+              ),
+              child: Column(
+                children: [
+                  // Encabezado
+                  Text(
+                    title,
+                    style: GoogleFonts.pressStart2p(
+                      color: titleColor,
+                      fontSize: 22,
+                      shadows: [
+                        Shadow(color: Colors.black, offset: const Offset(2, 2), blurRadius: 4),
+                        Shadow(color: titleColor.withOpacity(0.5), offset: const Offset(0, 0), blurRadius: 8),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    subtitle,
+                    style: GoogleFonts.pressStart2p(
+                      color: Colors.white60,
+                      fontSize: 8,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    'TIEMPO DE JUEGO: ${_gameState.elapsedTime}',
+                    style: GoogleFonts.robotoMono(
+                      color: Colors.white38,
+                      fontSize: 10,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  
+                  // Sistema de Pestañas
+                  Row(
+                    children: [
+                      Expanded(
+                        child: _tabBtn('PUNTUACIONES', 0),
+                      ),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: _tabBtn('EVOLUCIÓN TEMPORAL', 1),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 12),
+                  
+                  // Contenido de la Pestaña
+                  Expanded(
+                    child: _activeTab == 0 ? _buildTabScores() : _buildTabTimeline(),
+                  ),
+                  
+                  const SizedBox(height: 12),
+                  
+                  // Botones de acción inferiores
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      _menuBtnSmall('VER MAPA FINAL', const Color(0xFF9E9E9E), () {
+                        setState(() {
+                          _gameState.showPostGameMap = true;
+                        });
+                      }),
+                      _menuBtnSmall('VOLVER AL MENÚ', const Color(0xFFE94560), () {
+                        Navigator.of(context).popUntil((r) => r.isFirst);
+                      }),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _tabBtn(String label, int index) {
+    final active = _activeTab == index;
+    final color = active ? const Color(0xFFFFD700) : Colors.white24;
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          _activeTab = index;
+        });
+      },
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 8),
+        decoration: BoxDecoration(
+          color: active ? const Color(0xFFFFD700).withOpacity(0.12) : Colors.transparent,
+          border: Border.all(color: color, width: 1.5),
+          borderRadius: BorderRadius.circular(4),
+        ),
+        child: Center(
+          child: Text(
+            label,
+            style: GoogleFonts.pressStart2p(
+              color: active ? const Color(0xFFFFD700) : Colors.white54,
+              fontSize: 8,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildTabScores() {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.black26,
+        borderRadius: BorderRadius.circular(6),
+        border: Border.all(color: Colors.white10),
+      ),
+      child: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: DataTable(
+            columnSpacing: 10,
+            horizontalMargin: 8,
+            headingRowHeight: 28,
+            dataRowMaxHeight: 26,
+            dataRowMinHeight: 22,
+            columns: [
+              DataColumn(label: Text('JUGADOR', style: GoogleFonts.pressStart2p(fontSize: 6, color: const Color(0xFFFFD700)))),
+              DataColumn(label: Text('CIV', style: GoogleFonts.pressStart2p(fontSize: 6, color: const Color(0xFFFFD700)))),
+              DataColumn(label: Text('COMIDA', style: GoogleFonts.pressStart2p(fontSize: 6, color: const Color(0xFFFFD700)))),
+              DataColumn(label: Text('MADERA', style: GoogleFonts.pressStart2p(fontSize: 6, color: const Color(0xFFFFD700)))),
+              DataColumn(label: Text('ORO', style: GoogleFonts.pressStart2p(fontSize: 6, color: const Color(0xFFFFD700)))),
+              DataColumn(label: Text('PIEDRA', style: GoogleFonts.pressStart2p(fontSize: 6, color: const Color(0xFFFFD700)))),
+              DataColumn(label: Text('BAJAS', style: GoogleFonts.pressStart2p(fontSize: 6, color: const Color(0xFFFFD700)))),
+              DataColumn(label: Text('CREADO', style: GoogleFonts.pressStart2p(fontSize: 6, color: const Color(0xFFFFD700)))),
+              DataColumn(label: Text('SCORE', style: GoogleFonts.pressStart2p(fontSize: 6, color: const Color(0xFFFFD700)))),
+            ],
+            rows: List.generate(_gameState.playerStats.length, (index) {
+              final stats = _gameState.playerStats[index];
+              final pColor = Color(int.parse(stats.colorHex.replaceFirst('#', '0xFF')));
+              final isMe = index == _gameState.humanPlayerIndex;
+              final rowBg = isMe ? Colors.white.withOpacity(0.05) : Colors.transparent;
+
+              return DataRow(
+                color: WidgetStateProperty.all(rowBg),
+                cells: [
+                  DataCell(
+                    Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(width: 8, height: 8, decoration: BoxDecoration(color: pColor, borderRadius: BorderRadius.circular(2))),
+                        const SizedBox(width: 4),
+                        Text(stats.playerName, style: GoogleFonts.pressStart2p(fontSize: 5, color: isMe ? const Color(0xFFFFD700) : Colors.white70)),
+                      ],
+                    ),
+                  ),
+                  DataCell(Text(stats.civId.toUpperCase(), style: GoogleFonts.robotoMono(fontSize: 9, color: Colors.white54))),
+                  DataCell(Text(stats.foodGathered.toString(), style: GoogleFonts.robotoMono(fontSize: 9, color: Colors.white70))),
+                  DataCell(Text(stats.woodGathered.toString(), style: GoogleFonts.robotoMono(fontSize: 9, color: Colors.white70))),
+                  DataCell(Text(stats.goldGathered.toString(), style: GoogleFonts.robotoMono(fontSize: 9, color: Colors.white70))),
+                  DataCell(Text(stats.stoneGathered.toString(), style: GoogleFonts.robotoMono(fontSize: 9, color: Colors.white70))),
+                  DataCell(Text('${stats.unitsKilled}/${stats.buildingsDestroyed}', style: GoogleFonts.robotoMono(fontSize: 9, color: const Color(0xFFE94560)))),
+                  DataCell(Text('${stats.unitsTrained}/${stats.buildingsBuilt}', style: GoogleFonts.robotoMono(fontSize: 9, color: const Color(0xFF4CAF50)))),
+                  DataCell(Text(stats.totalScore.toString(), style: GoogleFonts.pressStart2p(fontSize: 5.5, color: const Color(0xFFFFD700), fontWeight: FontWeight.bold))),
+                ],
+              );
+            }),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildTabTimeline() {
+    return Column(
+      children: [
+        // Selectores de Métrica
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            _metricSelectorBtn('POBLACIÓN', 'population'),
+            const SizedBox(width: 16),
+            _metricSelectorBtn('RECURSOS', 'resources'),
+          ],
+        ),
+        const SizedBox(height: 12),
+        
+        // Área del gráfico
+        Expanded(
+          child: Container(
+            padding: const EdgeInsets.only(top: 8, right: 8, bottom: 8),
+            decoration: BoxDecoration(
+              color: Colors.black45,
+              borderRadius: BorderRadius.circular(6),
+              border: Border.all(color: Colors.white10),
+            ),
+            child: CustomPaint(
+              size: Size.infinite,
+              painter: RtsTimelineChartPainter(
+                snapshots: _gameState.timelineSnapshots,
+                playerStats: _gameState.playerStats,
+                metric: _activeChartMetric,
+              ),
+            ),
+          ),
+        ),
+        const SizedBox(height: 8),
+        
+        // Leyenda
+        Wrap(
+          spacing: 12,
+          runSpacing: 4,
+          children: List.generate(_gameState.playerStats.length, (index) {
+            final stats = _gameState.playerStats[index];
+            final pColor = Color(int.parse(stats.colorHex.replaceFirst('#', '0xFF')));
+            return Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(width: 8, height: 8, decoration: BoxDecoration(color: pColor, borderRadius: BorderRadius.circular(2))),
+                const SizedBox(width: 4),
+                Text(stats.playerName, style: GoogleFonts.pressStart2p(fontSize: 5, color: Colors.white54)),
+              ],
+            );
+          }),
+        ),
+      ],
+    );
+  }
+
+  Widget _metricSelectorBtn(String label, String value) {
+    final active = _activeChartMetric == value;
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          _activeChartMetric = value;
+        });
+      },
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+        decoration: BoxDecoration(
+          color: active ? const Color(0xFFFFD700).withOpacity(0.1) : Colors.transparent,
+          border: Border.all(
+            color: active ? const Color(0xFFFFD700) : Colors.white24,
+            width: 1.5,
+          ),
+          borderRadius: BorderRadius.circular(16),
+        ),
+        child: Text(
+          label,
+          style: GoogleFonts.pressStart2p(
+            color: active ? const Color(0xFFFFD700) : Colors.white38,
+            fontSize: 6,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _menuBtnSmall(String text, Color color, VoidCallback onTap) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: 150,
+        padding: const EdgeInsets.symmetric(vertical: 10),
+        decoration: BoxDecoration(
+          color: color.withOpacity(0.15),
+          border: Border.all(color: color.withOpacity(0.5), width: 1.5),
+          borderRadius: BorderRadius.circular(4),
+        ),
+        child: Center(
+          child: Text(
+            text,
+            style: GoogleFonts.pressStart2p(color: Colors.white, fontSize: 8),
+          ),
+        ),
+      ),
+    );
+  }
+
   // ─── PAUSE ───────────────────────────────────────────────────────────
   Widget _buildPauseOverlay() {
     return Container(
@@ -1072,3 +1416,209 @@ class _MinimapPainter extends CustomPainter {
   @override
   bool shouldRepaint(_MinimapPainter old) => true;
 }
+
+class RtsTimelineChartPainter extends CustomPainter {
+  final List<TimelineSnapshot> snapshots;
+  final List<PlayerStats> playerStats;
+  final String metric; // 'population' o 'resources'
+
+  RtsTimelineChartPainter({
+    required this.snapshots,
+    required this.playerStats,
+    required this.metric,
+  });
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    if (snapshots.isEmpty || playerStats.isEmpty) {
+      final textPaint = TextPainter(
+        text: TextSpan(
+          text: 'SIN DATOS SUFICIENTES',
+          style: GoogleFonts.pressStart2p(color: Colors.white24, fontSize: 8),
+        ),
+        textDirection: TextDirection.ltr,
+      )..layout();
+      textPaint.paint(canvas, Offset((size.width - textPaint.width) / 2, (size.height - textPaint.height) / 2));
+      return;
+    }
+
+    final double paddingLeft = 36.0;
+    final double paddingRight = 16.0;
+    final double paddingTop = 16.0;
+    final double paddingBottom = 24.0;
+
+    final double chartWidth = size.width - paddingLeft - paddingRight;
+    final double chartHeight = size.height - paddingTop - paddingBottom;
+
+    // 1. Encontrar máximos
+    double maxTime = snapshots.last.elapsedSeconds;
+    if (maxTime <= 0) maxTime = 60.0;
+
+    double maxY = 10.0;
+    for (var snapshot in snapshots) {
+      if (metric == 'population') {
+        for (var p in snapshot.populations) {
+          if (p > maxY) maxY = p.toDouble();
+        }
+      } else {
+        for (var r in snapshot.totalResources) {
+          if (r > maxY) maxY = r.toDouble();
+        }
+      }
+    }
+    // Redondear a un número bonito superior
+    maxY = (maxY * 1.15).ceilToDouble();
+    if (maxY < 10) maxY = 10;
+
+    // 2. Pintar fondo y rejilla
+    final gridPaint = Paint()
+      ..color = Colors.white.withOpacity(0.04)
+      ..strokeWidth = 1.0;
+
+    final axisPaint = Paint()
+      ..color = const Color(0xFFFFD700).withOpacity(0.3)
+      ..strokeWidth = 1.5;
+
+    // Ejes
+    canvas.drawLine(
+      Offset(paddingLeft, paddingTop),
+      Offset(paddingLeft, size.height - paddingBottom),
+      axisPaint,
+    );
+    canvas.drawLine(
+      Offset(paddingLeft, size.height - paddingBottom),
+      Offset(size.width - paddingRight, size.height - paddingBottom),
+      axisPaint,
+    );
+
+    // Rejilla horizontal e indicadores Y
+    final int yDivisions = 4;
+    for (int i = 0; i <= yDivisions; i++) {
+      double yVal = (maxY / yDivisions) * i;
+      double yPos = size.height - paddingBottom - (yVal / maxY) * chartHeight;
+
+      if (i > 0) {
+        canvas.drawLine(
+          Offset(paddingLeft, yPos),
+          Offset(size.width - paddingRight, yPos),
+          gridPaint,
+        );
+      }
+
+      final label = TextPainter(
+        text: TextSpan(
+          text: yVal.toInt().toString(),
+          style: GoogleFonts.robotoMono(color: Colors.white38, fontSize: 8),
+        ),
+        textDirection: TextDirection.ltr,
+      )..layout();
+      label.paint(canvas, Offset(paddingLeft - label.width - 6, yPos - label.height / 2));
+    }
+
+    // Rejilla vertical e indicadores X
+    final int xDivisions = 4;
+    for (int i = 0; i <= xDivisions; i++) {
+      double tVal = (maxTime / xDivisions) * i;
+      double xPos = paddingLeft + (tVal / maxTime) * chartWidth;
+
+      if (i > 0) {
+        canvas.drawLine(
+          Offset(xPos, paddingTop),
+          Offset(xPos, size.height - paddingBottom),
+          gridPaint,
+        );
+      }
+
+      // Convertir a mm:ss
+      final mins = tVal.toInt() ~/ 60;
+      final secs = tVal.toInt() % 60;
+      final timeStr = '$mins:${secs.toString().padLeft(2, '0')}';
+
+      final label = TextPainter(
+        text: TextSpan(
+          text: timeStr,
+          style: GoogleFonts.robotoMono(color: Colors.white38, fontSize: 8),
+        ),
+        textDirection: TextDirection.ltr,
+      )..layout();
+      label.paint(canvas, Offset(xPos - label.width / 2, size.height - paddingBottom + 6));
+    }
+
+    // 3. Trazar curvas para cada jugador
+    for (int pIdx = 0; pIdx < playerStats.length; pIdx++) {
+      final pStats = playerStats[pIdx];
+      final color = Color(int.parse(pStats.colorHex.replaceFirst('#', '0xFF')));
+
+      final linePaint = Paint()
+        ..color = color
+        ..strokeWidth = 2.0
+        ..style = PaintingStyle.stroke
+        ..strokeCap = StrokeCap.round;
+
+      final fillPaint = Paint()
+        ..color = color.withOpacity(0.06)
+        ..style = PaintingStyle.fill;
+
+      final path = Path();
+      final fillPath = Path();
+
+      bool started = false;
+      double lastX = 0;
+      double lastY = 0;
+
+      for (int sIdx = 0; sIdx < snapshots.length; sIdx++) {
+        final snapshot = snapshots[sIdx];
+        double xVal = snapshot.elapsedSeconds;
+        double yVal = 0.0;
+
+        if (metric == 'population') {
+          if (pIdx < snapshot.populations.length) {
+            yVal = snapshot.populations[pIdx].toDouble();
+          }
+        } else {
+          if (pIdx < snapshot.totalResources.length) {
+            yVal = snapshot.totalResources[pIdx].toDouble();
+          }
+        }
+
+        double xPos = paddingLeft + (xVal / maxTime) * chartWidth;
+        double yPos = size.height - paddingBottom - (yVal / maxY) * chartHeight;
+
+        if (!started) {
+          path.moveTo(xPos, yPos);
+          fillPath.moveTo(xPos, size.height - paddingBottom);
+          fillPath.lineTo(xPos, yPos);
+          started = true;
+        } else {
+          // Curva suave
+          double xc = (lastX + xPos) / 2;
+          double yc = (lastY + yPos) / 2;
+          path.quadraticBezierTo(lastX, lastY, xc, yc);
+          fillPath.quadraticBezierTo(lastX, lastY, xc, yc);
+        }
+
+        lastX = xPos;
+        lastY = yPos;
+      }
+
+      if (started) {
+        path.lineTo(lastX, lastY);
+        fillPath.lineTo(lastX, lastY);
+        fillPath.lineTo(lastX, size.height - paddingBottom);
+        fillPath.close();
+
+        // Pintar relleno y luego la línea
+        canvas.drawPath(fillPath, fillPaint);
+        canvas.drawPath(path, linePaint);
+
+        // Pequeño círculo al final
+        final dotPaint = Paint()..color = color;
+        canvas.drawCircle(Offset(lastX, lastY), 3.0, dotPaint);
+      }
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
+}
+

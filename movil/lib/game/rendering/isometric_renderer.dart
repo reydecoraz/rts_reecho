@@ -49,8 +49,8 @@ class IsometricRenderer extends CustomPainter {
         }
 
         // 2. Fog of War
-        bool isVisible = gameState.visibleMap.isNotEmpty && gameState.visibleMap[row][col];
-        bool isExplored = gameState.exploredMap.isNotEmpty && gameState.exploredMap[row][col];
+        bool isVisible = gameState.showPostGameMap || (gameState.visibleMap.isNotEmpty && gameState.visibleMap[row][col]);
+        bool isExplored = gameState.showPostGameMap || (gameState.exploredMap.isNotEmpty && gameState.exploredMap[row][col]);
         
         _paintTile(canvas, tile, pos, isVisible, isExplored);
       }
@@ -173,7 +173,7 @@ class IsometricRenderer extends CustomPainter {
     // Fog of War: No dibujar enemigos si no son visibles
     int r = entity.row.round().clamp(0, gameState.mapSize - 1);
     int c = entity.col.round().clamp(0, gameState.mapSize - 1);
-    bool isVisible = gameState.visibleMap.isEmpty || gameState.visibleMap[r][c];
+    bool isVisible = gameState.showPostGameMap || gameState.visibleMap.isEmpty || gameState.visibleMap[r][c];
     
     // Aliados siempre visibles (el mapa ya los incluye), pero forzamos por si acaso
     bool isAlly = gameState.players[entity.playerIndex].teamIndex == gameState.humanTeamIndex;

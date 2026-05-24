@@ -132,6 +132,13 @@ class GameState extends ChangeNotifier {
   // ─── Estado Tecnológico por Jugador ───────────────────────────────
   List<PlayerTechState> playerTechStates = [];
 
+  // ─── Estadísticas y Fin de Partida ──────────────────────────────────
+  List<PlayerStats> playerStats = [];
+  List<TimelineSnapshot> timelineSnapshots = [];
+  int? winnerPlayerIndex;
+  bool showPostGameMap = false;
+  double _timelineTimer = 0.0;
+
   // ─── Registro de Eventos en Tiempo Real ─────────────────────────────
   final List<String> eventLogs = [];
   final Map<String, double> lastCombatLogTimes = {};
@@ -226,6 +233,27 @@ class GameState extends ChangeNotifier {
       (_) => PlayerTechState(),
     );
 
+    playerStats = List.generate(
+      match.players.length,
+      (i) {
+        final p = match.players[i];
+        final colors = ["#2196F3", "#F44336", "#4CAF50", "#FFEB3B", "#9C27B0", "#FF9800", "#00BCD4", "#E91E63"];
+        final hex = colors[p.colorIndex % colors.length];
+        return PlayerStats(
+          playerIndex: p.index,
+          playerName: p.name,
+          civId: p.civId,
+          colorHex: hex,
+        );
+      },
+    );
+    timelineSnapshots.clear();
+    winnerPlayerIndex = null;
+    showPostGameMap = false;
+    isGameOver = false;
+    _timelineTimer = 0.0;
+
+
     // Centrar cámara en el spawn del jugador humano
     final humanSpawn = spawnZones.firstWhere(
       (z) => z.playerIndex == humanPlayerIndex,
@@ -319,6 +347,23 @@ class GameState extends ChangeNotifier {
       _elapsedTime += dt;
       _accumulatedTickTime += dt;
 
+      // Historial temporal para la gráfica (cada 15s)
+      _timelineTimer += dt;
+      if (_timelineTimer >= 15.0) {
+        _timelineTimer -= 15.0;
+        final pops = List.generate(players.length, (i) => currentPopulation(i));
+        final resources = List.generate(players.length, (i) {
+          final res = playerResources[i];
+          return res.wood + res.food + res.gold + res.stone;
+        });
+        timelineSnapshots.add(TimelineSnapshot(
+          elapsedSeconds: _elapsedTime,
+          populations: pops,
+          totalResources: resources,
+        ));
+      }
+
+
       // 2. Ejecutar lógica de "Server Tick" cada 0.5 segundos (Producción e IA Macro)
       if (_accumulatedTickTime >= 0.5) {
         _accumulatedTickTime -= 0.5;
@@ -349,6 +394,16 @@ class GameState extends ChangeNotifier {
             }
             if (target.hp <= 0) {
               entities.remove(target);
+              if (attacker != null) {
+                int killerIdx = attacker.playerIndex;
+                if (killerIdx >= 0 && killerIdx < playerStats.length) {
+                  if (target.type == EntityType.unit) {
+                    playerStats[killerIdx].unitsKilled++;
+                  } else if (target.type == EntityType.building) {
+                    playerStats[killerIdx].buildingsDestroyed++;
+                  }
+                }
+              }
             }
           }
         }
@@ -399,9 +454,72 @@ class GameState extends ChangeNotifier {
     return entities.where((e) => e.playerIndex == pIdx && e.type == EntityType.unit).length;
   }
 
-  void _autoAssignIdleWorkers() => aiDirector.economy.assignIdleWorkersGlobal();
+  void _processServerTick() {
+    aiDirector.processServerTick();
+    _checkVictoryDefeat();
+  }
 
-  void _processServerTick() => aiDirector.processServerTick();
+  void _checkVictoryDefeat() {
+    if (isGameOver || players.isEmpty) return;
+
+    // 1. Verificar si el jugador humano tiene su TC
+    String humanCivId = players[humanPlayerIndex].civId;
+    String humanTcName = GameDataService()
+        .getBuildingsForCiv(humanCivId)
+        .where((b) => b.category == 'town_center')
+        .firstOrNull?.name ?? 'Centro Urbano';
+
+    bool humanHasTc = entities.any((e) =>
+        e.playerIndex == humanPlayerIndex &&
+        e.type == EntityType.building &&
+        e.name == humanTcName &&
+        e.hp > 0);
+
+    if (!humanHasTc) {
+      isGameOver = true;
+      winnerPlayerIndex = -1; // Derrota
+      addEventLog("¡TU CENTRO URBANO HA SIDO DESTRUIDO! PARTIDA TERMINADA.");
+      notifyListeners();
+      return;
+    }
+
+    // 2. Verificar si los enemigos tienen TCs
+    bool enemiesHaveTc = false;
+    for (int i = 0; i < players.length; i++) {
+      if (i == humanPlayerIndex) continue;
+      String enemyCivId = players[i].civId;
+      String enemyTcName = GameDataService()
+          .getBuildingsForCiv(enemyCivId)
+          .where((b) => b.category == 'town_center')
+          .firstOrNull?.name ?? 'Centro Urbano';
+
+      bool hasTc = entities.any((e) =>
+          e.playerIndex == i &&
+          e.type == EntityType.building &&
+          e.name == enemyTcName &&
+          e.hp > 0);
+      if (hasTc) {
+        enemiesHaveTc = true;
+        break;
+      }
+    }
+
+    if (!enemiesHaveTc) {
+      isGameOver = true;
+      winnerPlayerIndex = humanPlayerIndex; // Victoria
+      addEventLog("¡TODOS LOS CENTROS URBANOS ENEMIGOS HAN SIDO DESTRUIDOS! ¡VICTORIA!");
+      notifyListeners();
+    }
+  }
+
+  void addBuildingEntity(int pIdx, GameEntity building) {
+    entities.add(building);
+    if (pIdx >= 0 && pIdx < playerStats.length) {
+      playerStats[pIdx].buildingsBuilt++;
+    }
+  }
+
+
 
   /// Busca automáticamente trabajo para aldeanos que no están haciendo nada
 

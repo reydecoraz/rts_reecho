@@ -77,7 +77,7 @@ class EconomyDirector {
         if (spot != null) {
           state.playerResources[pIdx].wood -= 25;
           spot.isWalkable = false;
-          state.entities.add(GameEntity(
+          state.addBuildingEntity(pIdx, GameEntity(
             id: 'house_${pIdx}_${rand.nextInt(99999)}', playerIndex: pIdx, type: EntityType.building, name: houseName,
             col: spot.col.toDouble(), row: spot.row.toDouble(), hp: 1, maxHp: entityBaseStats[houseName]?.maxHp ?? 100,
           ));
@@ -99,7 +99,7 @@ class EconomyDirector {
           if (spot != null) {
             state.playerResources[pIdx].wood -= 50;
             spot.isWalkable = false;
-            state.entities.add(GameEntity(
+            state.addBuildingEntity(pIdx, GameEntity(
               id: 'lumbercamp_${pIdx}_${rand.nextInt(99999)}', playerIndex: pIdx, type: EntityType.building, name: lumberName,
               col: spot.col.toDouble(), row: spot.row.toDouble(), hp: 1, maxHp: entityBaseStats[lumberName]?.maxHp ?? 100,
             ));
@@ -122,7 +122,7 @@ class EconomyDirector {
           if (spot != null) {
             state.playerResources[pIdx].wood -= 50;
             spot.isWalkable = false;
-            state.entities.add(GameEntity(
+            state.addBuildingEntity(pIdx, GameEntity(
               id: 'miningcamp_${pIdx}_${rand.nextInt(99999)}', playerIndex: pIdx, type: EntityType.building, name: miningName,
               col: spot.col.toDouble(), row: spot.row.toDouble(), hp: 1, maxHp: entityBaseStats[miningName]?.maxHp ?? 100,
             ));
@@ -146,7 +146,7 @@ class EconomyDirector {
             state.playerResources[pIdx].wood -= 60;
             spot.isWalkable = true; 
             spot.resource = ResourceNode(type: ResourceType.food, amount: 99999, maxAmount: 99999);
-            state.entities.add(GameEntity(
+            state.addBuildingEntity(pIdx, GameEntity(
               id: 'farm_${pIdx}_${rand.nextInt(99999)}', playerIndex: pIdx, type: EntityType.building, name: farmName,
               col: spot.col.toDouble(), row: spot.row.toDouble(), hp: 1, maxHp: entityBaseStats[farmName]?.maxHp ?? 100,
             ));

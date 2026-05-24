@@ -434,18 +434,24 @@ class PhysicsManager {
 
             if (distToDropoff <= 1.8) { 
               entity.currentPath.clear();
-              if (entity.workerRole == 'wood') {
-                state.playerResources[entity.playerIndex].wood += entity.carriedResource;
-              } else if (entity.workerRole == 'food') {
-                state.playerResources[entity.playerIndex].food += entity.carriedResource;
-              } else if (entity.workerRole == 'stone') {
-                state.playerResources[entity.playerIndex].stone += entity.carriedResource;
-              } else {
-                state.playerResources[entity.playerIndex].gold += entity.carriedResource;
-              }
-              entity.carriedResource = 0;
-              entity.targetResourceTile = null;
-              entity.state = EntityState.idle; 
+               int pIdx = entity.playerIndex;
+               bool hasStats = pIdx >= 0 && pIdx < state.playerStats.length;
+               if (entity.workerRole == 'wood') {
+                 state.playerResources[entity.playerIndex].wood += entity.carriedResource;
+                 if (hasStats) state.playerStats[pIdx].woodGathered += entity.carriedResource;
+               } else if (entity.workerRole == 'food') {
+                 state.playerResources[entity.playerIndex].food += entity.carriedResource;
+                 if (hasStats) state.playerStats[pIdx].foodGathered += entity.carriedResource;
+               } else if (entity.workerRole == 'stone') {
+                 state.playerResources[entity.playerIndex].stone += entity.carriedResource;
+                 if (hasStats) state.playerStats[pIdx].stoneGathered += entity.carriedResource;
+               } else {
+                 state.playerResources[entity.playerIndex].gold += entity.carriedResource;
+                 if (hasStats) state.playerStats[pIdx].goldGathered += entity.carriedResource;
+               }
+               entity.carriedResource = 0;
+               entity.targetResourceTile = null;
+               entity.state = EntityState.idle; 
             } else if (entity.currentPath.isNotEmpty) {
               moveAlongPath(entity, unitBaseSpeed, physicsDt);
             } else {
@@ -502,7 +508,17 @@ class PhysicsManager {
                         targetEnemy.hp -= damage;
                         state.callForHelp(targetEnemy, entity);
                       }
-                      if (targetEnemy.hp <= 0) toRemove.add(targetEnemy);
+                      if (targetEnemy.hp <= 0) {
+                        toRemove.add(targetEnemy);
+                        int killerIdx = entity.playerIndex;
+                        if (killerIdx >= 0 && killerIdx < state.playerStats.length) {
+                          if (targetEnemy.type == EntityType.unit) {
+                            state.playerStats[killerIdx].unitsKilled++;
+                          } else if (targetEnemy.type == EntityType.building) {
+                            state.playerStats[killerIdx].buildingsDestroyed++;
+                          }
+                        }
+                      }
                    } else {
                       if (entity.pathTimer <= 0) {
                         entity.currentPath = PathfindingManager.findPath(state.tiles, entity.col.round(), entity.row.round(), targetEnemy.col.round(), targetEnemy.row.round());
