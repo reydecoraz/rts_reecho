@@ -207,6 +207,7 @@ class EconomyDirector {
 
   void assignIdleWorkersGlobal() {
     for (int pIdx = 0; pIdx < state.players.length; pIdx++) {
+      if (state.players[pIdx].type != PlayerType.ai) continue;
       String civId = state.players[pIdx].civId;
       String? workerName = getWorkerName(civId);
       String? farmName = _getBuildingName(civId, 'farm');
