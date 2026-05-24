@@ -1,101 +1,125 @@
 {
   "communities": {
     "0": [
-      "app_page_home",
-      "app_page_metadata",
-      "components_advancedsections_advancedeffectsection",
-      "components_advancedsections_advancedproductionsection",
-      "components_advancedsections_complexrelationsection",
-      "components_advancedsections_productionbonussection",
-      "components_civwizardmodal_civwizardmodalprops",
-      "components_dashboard_dashboard",
-      "components_dashboard_tab_icons",
-      "components_dashboard_tables",
-      "components_entitymodal_entitymodal",
-      "components_overridemodal_overridemodalprops",
-      "components_spriteconfiguratormodal_actions",
-      "components_spriteconfiguratormodal_construction_stages",
-      "components_spriteconfiguratormodal_damage_stages",
-      "components_spriteconfiguratormodal_directions",
-      "components_spriteconfiguratormodal_tabid",
-      "components_spriteconfiguratormodal_uploadslot",
-      "dashboard_dashboardheader_dashboardheader",
-      "dashboard_entitydetailspane_entitydetailspane",
-      "dashboard_entitylist_entitylist",
-      "dashboard_entitylist_entitylistprops",
-      "dashboard_page_dashboardpage",
-      "dashboard_sidebar_sidebar",
-      "dashboard_sidebar_sidebarprops",
-      "editors_advancedsections_advancedeffectsection",
-      "editors_advancedsections_advancedproductionsection",
-      "editors_advancedsections_complexrelationsection",
-      "editors_advancedsections_productionbonussection",
-      "front_src_app_dashboard_page_tsx",
-      "front_src_app_page_tsx",
-      "front_src_components_advancedsections_tsx",
-      "front_src_components_dashboard_sidebar_tsx",
-      "front_src_components_dashboard_tsx",
-      "front_src_components_editors_advancedsections_tsx",
-      "front_src_components_entitymodal_tsx",
-      "front_src_components_modals_civwizardmodal_tsx",
-      "front_src_components_modals_overridemodal_tsx",
-      "front_src_components_modals_spriteconfiguratormodal_tsx",
-      "front_src_components_spriteconfiguratormodal_tsx",
-      "front_src_hooks_usedashboardstate_ts",
-      "front_src_lib_api_ts",
-      "front_src_lib_constants_tsx",
-      "lib_api_api",
-      "lib_constants_tab_icons",
-      "lib_constants_tables",
-      "lib_supabasestorage_uploadsprite",
-      "modals_civwizardmodal_civwizardmodal",
-      "modals_civwizardmodal_civwizardmodalprops",
-      "modals_overridemodal_overridemodal",
-      "modals_overridemodal_overridemodalprops",
-      "modals_spriteconfiguratormodal_actions",
-      "modals_spriteconfiguratormodal_construction_stages",
-      "modals_spriteconfiguratormodal_damage_stages",
-      "modals_spriteconfiguratormodal_directions",
-      "modals_spriteconfiguratormodal_tabid",
-      "modals_spriteconfiguratormodal_uploadslot",
-      "ui_promptmodal_promptmodal",
-      "ui_promptmodal_promptmodalprops"
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_ai_director_dart_aidirector",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_ai_director_dart_evaluatemilitary",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_ai_director_dart_evaluatepopulation",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_ai_director_dart_executeattackrun",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_ai_director_dart_think",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_ai_director_dart_update",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_city_planner_dart_cityplanner",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_city_planner_dart_doesbuildingblockcrucialpaths",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_formation_manager_dart_dispatchorder",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_formation_manager_dart_march",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_formation_manager_dart_squadformation",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_pathfinding_manager_dart_astarnode",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_pathfinding_manager_dart_binaryheap",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_pathfinding_manager_dart_bubbledown",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_pathfinding_manager_dart_bubbleup",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_pathfinding_manager_dart_heuristic",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_pathfinding_manager_dart_push",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_pathfinding_manager_dart_reconstructpath",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_pathfinding_manager_dart_update",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_createmapborders",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_distancepointtosegment",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_distributegoldandstonedeposits",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_ensureresourcesnearspawns",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_gamemapgenerator",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_generate",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_generateseed",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_groworganiccluster",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_growresourcecluster",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_isnearpathtocenter",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_isnearspawn",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_isnearwater",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_mapgenerationresult",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_markspawnzones",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_placeforestclusters",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_placelakes",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_placenearspawn",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_sqrt",
+      "dart_collection",
+      "dart_math",
+      "formation_manager_dart",
+      "models_game_models_dart",
+      "movil_lib_game_engine_ai_ai_director_dart",
+      "movil_lib_game_engine_ai_city_planner_dart",
+      "movil_lib_game_engine_ai_formation_manager_dart",
+      "movil_lib_game_engine_ai_pathfinding_manager_dart",
+      "movil_lib_game_engine_map_generator_dart",
+      "pathfinding_manager_dart",
+      "worker_ai_dart"
     ],
     "1": [
+      "ai_city_planner_dart",
+      "ai_pathfinding_manager_dart",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_firebase_options_dart_defaultfirebaseoptions",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_firebase_options_dart_unsupportederror",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_adjustzoom",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_autoassignidleworkers",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_callforhelp",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_centercameraontile",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_commandmove",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_currentpopulation",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_gatherpassiveresources",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_gatherresource",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_getunitstat",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_loadstatsfromsupabase",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_maxpopulation",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_movealongpath",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_movecamera",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_processservertick",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_rebuildresourcecache",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_researchtechnology",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_selectentity",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_selecttile",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_sendtoclosestdropoff",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_simulatephysics",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_spawnprojectile",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_update",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_updateproduction",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_updatevisibility",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_auth_service_dart_authservice",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_auth_service_dart_exception",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_auth_service_dart_syncprofile",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_supabase_service_dart_supabaseservice",
+      "dart_async",
+      "dart_convert",
+      "map_generator_dart",
+      "movil_lib_firebase_options_dart",
+      "movil_lib_game_engine_game_state_dart",
+      "movil_lib_services_auth_service_dart",
+      "movil_lib_services_supabase_service_dart",
+      "package_firebase_auth_firebase_auth_dart",
+      "package_firebase_core_firebase_core_dart",
+      "package_flutter_foundation_dart",
+      "package_flutter_painting_dart",
+      "package_google_sign_in_google_sign_in_dart",
+      "package_supabase_flutter_supabase_flutter_dart"
+    ],
+    "2": [
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_actionbtn",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_alertdialog",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_build",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_buildbottombar",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_buildeventlog",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_buildgame",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_buildjoystick",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_buildloading",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_buildmapviewport",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_buildminimap",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_buildpauseoverlay",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_buildselectioninfo",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_buildtileinfo",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_buildtophud",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_container",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_costminichip",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_dispose",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_elevatedbutton",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_fadetransition",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_gamescreenstate",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_gesturedetector",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_hudbtn",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_icon",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_initstate",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_lineargradient",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_listenablebuilder",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_listener",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_mc",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_menubtn",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_minimappainter",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_onjoystickpanend",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_onjoystickpanupdate",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_opacity",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_padding",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_paint",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_positioned",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_reschip",
@@ -103,70 +127,18 @@
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_scaffold",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_shouldrepaint",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_showmapinfo",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_showresearchdialog",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_sizedbox",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_snack",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_stack",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_startgameloop",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_startjoysticktimer",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_screen_dart_transform",
-      "dart_async",
-      "game_engine_rts_flame_game_dart",
+      "game_engine_game_state_dart",
+      "game_models_game_models_dart",
       "game_rendering_isometric_renderer_dart",
+      "game_screen_dart",
       "movil_lib_screens_game_screen_dart",
       "package_flutter_gestures_dart",
       "package_flutter_scheduler_dart"
-    ],
-    "2": [
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_rts_flame_game_dart_ongameresize",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_rts_flame_game_dart_rtsflamegame",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_rts_flame_game_dart_update",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_spatial_grid_dart_clear",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_spatial_grid_dart_insert",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_spatial_grid_dart_spatialgrid",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_gettilecolors",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_isometricrenderer",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paint",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintarchery",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintbarracks",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintberrybush",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintentities",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintfarm",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintgoldvein",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_painthouse",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_painthpbar",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintprojectiles",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintsingleentity",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintspawnmarker",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintstonevein",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_painttext",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_painttile",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_painttowncenter",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_painttree",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintwatershimmer",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_shouldrepaint",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_tc",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_widgets_pixel_button_dart_boxshadow",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_widgets_pixel_button_dart_build",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_widgets_pixel_button_dart_gesturedetector",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_widgets_pixel_button_dart_pixelbutton",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_widgets_pixel_button_dart_pixelbuttonstate",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_test_engine_simulation_test_dart_main",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_test_widget_test_dart_main",
-      "engine_game_state_dart",
-      "movil_lib_game_engine_rts_flame_game_dart",
-      "movil_lib_game_engine_spatial_grid_dart",
-      "movil_lib_game_rendering_isometric_renderer_dart",
-      "movil_lib_widgets_pixel_button_dart",
-      "movil_test_engine_simulation_test_dart",
-      "movil_test_widget_test_dart",
-      "package_flame_components_dart",
-      "package_flame_game_dart",
-      "package_flutter_material_dart",
-      "package_flutter_test_flutter_test_dart",
-      "package_rts_isometric_game_game_engine_game_state_dart",
-      "package_rts_isometric_game_game_models_game_models_dart",
-      "rendering_isometric_renderer_dart"
     ],
     "3": [
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_config_screen_dart_build",
@@ -197,7 +169,6 @@
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_config_screen_dart_icon",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_config_screen_dart_initstate",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_config_screen_dart_keyedsubtree",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_config_screen_dart_listview",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_config_screen_dart_modebutton",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_config_screen_dart_padding",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_config_screen_dart_paint",
@@ -209,52 +180,46 @@
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_config_screen_dart_startbattle",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_game_config_screen_dart_text",
       "game_engine_map_generator_dart",
-      "game_models_game_models_dart",
-      "game_screen_dart",
       "movil_lib_screens_game_config_screen_dart"
     ],
     "4": [
-      "ai_ai_director_dart",
-      "ai_city_planner_dart",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_addeventlog",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_adjustzoom",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_autoassignidleworkers",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_callforhelp",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_canbuild",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_centercameraontile",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_commandmove",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_currentpopulation",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_gatherpassiveresources",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_gatherresource",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_getunitstat",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_ismilunit",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_loadstatsfromsupabase",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_maxpopulation",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_movealongpath",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_movecamera",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_notifycombatstarted",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_processservertick",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_rebuildresourcecache",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_researchtechnology",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_selectentity",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_selecttile",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_sendtoclosestdropoff",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_simulatephysics",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_spawnprojectile",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_triggeruiupdate",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_update",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_updatepopulationcounters",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_updateproduction",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_game_state_dart_updatevisibility",
-      "dart_convert",
-      "game_state_dart",
-      "managers_combat_manager_dart",
-      "managers_physics_manager_dart",
-      "managers_production_manager_dart",
-      "managers_tech_tree_manager_dart",
-      "managers_vision_manager_dart",
-      "map_generator_dart",
-      "package_flutter_painting_dart"
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_gettilecolors",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_isometricrenderer",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paint",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintarchery",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintbarracks",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintberrybush",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintentities",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintfarm",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintgoldvein",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_painthouse",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_painthpbar",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintprojectiles",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintspawnmarker",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintstonevein",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_painttext",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_painttile",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_painttowncenter",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_painttree",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_paintwatershimmer",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_shouldrepaint",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_rendering_isometric_renderer_dart_tc",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_widgets_pixel_button_dart_boxshadow",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_widgets_pixel_button_dart_build",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_widgets_pixel_button_dart_gesturedetector",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_widgets_pixel_button_dart_pixelbutton",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_widgets_pixel_button_dart_pixelbuttonstate",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_test_engine_simulation_test_dart_main",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_test_widget_test_dart_main",
+      "engine_game_state_dart",
+      "movil_lib_game_rendering_isometric_renderer_dart",
+      "movil_lib_widgets_pixel_button_dart",
+      "movil_test_engine_simulation_test_dart",
+      "movil_test_widget_test_dart",
+      "package_flutter_material_dart",
+      "package_flutter_test_flutter_test_dart",
+      "package_rts_isometric_game_game_engine_game_state_dart",
+      "package_rts_isometric_game_game_models_game_models_dart"
     ],
     "5": [
       "movil_windows_flutter_ephemeral_flutter_export_h",
@@ -262,19 +227,12 @@
       "movil_windows_flutter_ephemeral_flutter_plugin_registrar_h",
       "movil_windows_flutter_ephemeral_flutter_texture_registrar_h",
       "movil_windows_runner_flutter_window_cpp",
-      "movil_windows_runner_main_cpp",
       "movil_windows_runner_resource_h",
-      "movil_windows_runner_utils_cpp",
-      "movil_windows_runner_utils_h",
       "movil_windows_runner_win32_window_cpp",
       "runner_flutter_window_flutterwindow",
       "runner_flutter_window_messagehandler",
       "runner_flutter_window_oncreate",
       "runner_flutter_window_ondestroy",
-      "runner_main_wwinmain",
-      "runner_utils_createandattachconsole",
-      "runner_utils_getcommandlinearguments",
-      "runner_utils_utf8fromutf16",
       "runner_win32_window_create",
       "runner_win32_window_destroy",
       "runner_win32_window_enablefulldpisupportifavailable",
@@ -364,12 +322,12 @@
     ],
     "8": [
       "flutter_generated_plugin_registrant_fl_register_plugins",
-      "flutter_generated_plugin_registrant_registerplugins",
       "flutter_generatedpluginregistrant_registergeneratedplugins",
       "flutterappdelegate",
       "flutterimplicitenginedelegate",
       "movil_ios_runner_generatedpluginregistrant_h",
       "movil_linux_runner_main_cc",
+      "movil_macos_runner_appdelegate_swift",
       "movil_macos_runner_mainflutterwindow_swift",
       "nswindow",
       "plugins_generatedpluginregistrant_generatedpluginregistrant_registerwith",
@@ -393,33 +351,6 @@
       "runner_my_application_myapplication_parent_instance"
     ],
     "9": [
-      "components_spritegenerator_generatorstate",
-      "components_spritegenerator_spritegeneratorprops",
-      "editors_spritegenerator_generatorstate",
-      "editors_spritegenerator_spritegenerator",
-      "editors_spritegenerator_spritegeneratorprops",
-      "front_src_components_editors_spritegenerator_tsx",
-      "front_src_lib_backgroundremover_ts",
-      "front_src_lib_spriteai_ts",
-      "front_src_lib_supabasestorage_ts",
-      "lib_backgroundremover_isrembgavailable",
-      "lib_backgroundremover_removebackground",
-      "lib_backgroundremover_removebackgroundfromfile",
-      "lib_spriteai_generatesprite",
-      "lib_spriteai_generatewithopenai",
-      "lib_spriteai_generatewithstability",
-      "lib_spriteai_getprovidername",
-      "lib_spriteai_isspritegeneratorconfigured",
-      "lib_spriteai_spritegenerationoptions",
-      "lib_spriteai_style_suffixes",
-      "lib_supabasestorage_deletesprite",
-      "lib_supabasestorage_supabase",
-      "lib_supabasestorage_uploadblob",
-      "scratch_process_assets_main",
-      "scratch_process_assets_py",
-      "scratch_process_assets_upload_to_supabase"
-    ],
-    "10": [
       "196c15e30a_input_assets",
       "196c15e30a_input_c_compiler_ar",
       "196c15e30a_input_c_compiler_cc",
@@ -444,7 +375,7 @@
       "196c15e30a_input_windows_developer_command_prompt",
       "movil_dart_tool_hooks_runner_objective_c_196c15e30a_input_json"
     ],
-    "11": [
+    "10": [
       "back_package_devdependencies",
       "back_package_devdependencies_eslint",
       "back_package_devdependencies_eslint_config_prettier",
@@ -469,7 +400,7 @@
       "back_package_devdependencies_typescript",
       "back_package_devdependencies_typescript_eslint"
     ],
-    "12": [
+    "11": [
       "back_tsconfig_compileroptions",
       "back_tsconfig_compileroptions_allowsyntheticdefaultimports",
       "back_tsconfig_compileroptions_baseurl",
@@ -494,7 +425,7 @@
       "back_tsconfig_compileroptions_target",
       "back_tsconfig_json"
     ],
-    "13": [
+    "12": [
       "cpp_client_wrapper_flutter_engine_flutterengine",
       "cpp_client_wrapper_flutter_engine_getregistrarforplugin",
       "cpp_client_wrapper_flutter_engine_processexternalwindowmessage",
@@ -519,7 +450,7 @@
       "movil_windows_flutter_ephemeral_cpp_client_wrapper_include_flutter_plugin_registrar_windows_h",
       "movil_windows_flutter_ephemeral_cpp_client_wrapper_include_flutter_plugin_registry_h"
     ],
-    "14": [
+    "13": [
       "2578b5eb1e_input_android_target_ndk_api",
       "2578b5eb1e_input_assets",
       "2578b5eb1e_input_c_compiler_ar",
@@ -542,30 +473,7 @@
       "2578b5eb1e_input_user_defines",
       "movil_dart_tool_hooks_runner_objective_c_2578b5eb1e_input_json"
     ],
-    "15": [
-      "back_src_game_data_game_data_service_ts",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_attributedefinition",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_buildingconfig",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_buildingproduction",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_civilizationconfig",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_civoverride",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_gamesnapshot",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_getattribute",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_heroconfig",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_techconfig",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_unitconfig",
-      "game_data_game_data_service_gamedataservice_addrelation",
-      "game_data_game_data_service_gamedataservice_constructor",
-      "game_data_game_data_service_gamedataservice_create",
-      "game_data_game_data_service_gamedataservice_findall",
-      "game_data_game_data_service_gamedataservice_findone",
-      "game_data_game_data_service_gamedataservice_getrelations",
-      "game_data_game_data_service_gamedataservice_remove",
-      "game_data_game_data_service_gamedataservice_removerelation",
-      "game_data_game_data_service_gamedataservice_update",
-      "game_engine_game_state_dart"
-    ],
-    "16": [
+    "14": [
       "front_tsconfig_compileroptions",
       "front_tsconfig_compileroptions_allowjs",
       "front_tsconfig_compileroptions_esmoduleinterop",
@@ -587,28 +495,48 @@
       "front_tsconfig_json",
       "front_tsconfig_paths"
     ],
-    "17": [
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_createmapborders",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_distancepointtosegment",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_distributegoldandstonedeposits",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_ensureresourcesnearspawns",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_gamemapgenerator",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_generate",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_generateseed",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_groworganiccluster",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_growresourcecluster",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_isnearpathtocenter",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_isnearspawn",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_isnearwater",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_mapgenerationresult",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_markspawnzones",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_placeforestclusters",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_placelakes",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_placenearspawn",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_map_generator_dart_sqrt",
-      "movil_lib_game_engine_map_generator_dart"
+    "15": [
+      "components_advancedsections_advancedeffectsection",
+      "components_advancedsections_advancedproductionsection",
+      "components_advancedsections_complexrelationsection",
+      "components_advancedsections_productionbonussection",
+      "components_civwizardmodal_civwizardmodalprops",
+      "components_dashboard_dashboard",
+      "components_dashboard_tab_icons",
+      "components_dashboard_tables",
+      "components_entitymodal_entitymodal",
+      "components_overridemodal_overridemodalprops",
+      "dashboard_page_dashboardpage",
+      "front_src_app_dashboard_page_tsx",
+      "front_src_components_advancedsections_tsx",
+      "front_src_components_civwizardmodal_tsx",
+      "front_src_components_dashboard_tsx",
+      "front_src_components_entitymodal_tsx",
+      "front_src_components_overridemodal_tsx",
+      "front_src_lib_api_ts",
+      "lib_api_api"
     ],
-    "18": [
+    "16": [
+      "back_src_game_data_game_data_service_ts",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_buildingconfig",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_buildingproduction",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_civilizationconfig",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_civoverride",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_gamedataservice",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_gamesnapshot",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_techconfig",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_game_data_service_dart_unitconfig",
+      "game_data_game_data_service_gamedataservice_addrelation",
+      "game_data_game_data_service_gamedataservice_constructor",
+      "game_data_game_data_service_gamedataservice_create",
+      "game_data_game_data_service_gamedataservice_findall",
+      "game_data_game_data_service_gamedataservice_findone",
+      "game_data_game_data_service_gamedataservice_getrelations",
+      "game_data_game_data_service_gamedataservice_remove",
+      "game_data_game_data_service_gamedataservice_removerelation",
+      "game_data_game_data_service_gamedataservice_update"
+    ],
+    "17": [
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_models_game_models_dart_addbonus",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_models_game_models_dart_civbasestats",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_models_game_models_dart_entitybasestats",
@@ -627,7 +555,7 @@
       "dart_ui",
       "movil_lib_game_models_game_models_dart"
     ],
-    "19": [
+    "18": [
       "cpp_client_wrapper_standard_codec_decodemessageinternal",
       "cpp_client_wrapper_standard_codec_decodemethodcallinternal",
       "cpp_client_wrapper_standard_codec_encodedtypeforvalue",
@@ -645,7 +573,7 @@
       "flutter_method_codec_flutter",
       "movil_windows_flutter_ephemeral_cpp_client_wrapper_standard_codec_cc"
     ],
-    "20": [
+    "19": [
       "cpp_client_wrapper_standard_codec_standardmethodcodec",
       "flutter_engine_method_result_flutter",
       "flutter_method_call_flutter",
@@ -661,23 +589,7 @@
       "movil_windows_flutter_ephemeral_cpp_client_wrapper_include_flutter_method_result_functions_h",
       "movil_windows_flutter_ephemeral_cpp_client_wrapper_include_flutter_method_result_h"
     ],
-    "21": [
-      "components_techtreeeditor_buildingnode",
-      "components_techtreeeditor_eras",
-      "components_techtreeeditor_nodetypes",
-      "components_techtreeeditor_technode",
-      "components_techtreeeditor_unitnode",
-      "editors_techtreeeditor_eras",
-      "editors_techtreeeditor_nodetypes",
-      "editors_techtreeeditor_techtreeeditor",
-      "editors_techtreenodes_buildingnode",
-      "editors_techtreenodes_eralanenode",
-      "editors_techtreenodes_technode",
-      "editors_techtreenodes_unitnode",
-      "front_src_components_editors_techtreeeditor_tsx",
-      "front_src_components_editors_techtreenodes_tsx"
-    ],
-    "22": [
+    "20": [
       "back_package_scripts",
       "back_package_scripts_build",
       "back_package_scripts_format",
@@ -692,7 +604,7 @@
       "back_package_scripts_test_e2e",
       "back_package_scripts_test_watch"
     ],
-    "23": [
+    "21": [
       "cpp_client_wrapper_core_implementations_forwardtohandler",
       "cpp_client_wrapper_core_implementations_marktextureframeavailable",
       "cpp_client_wrapper_core_implementations_registertexture",
@@ -706,19 +618,46 @@
       "flutter_method_channel_setwarnsonoverflow",
       "movil_windows_flutter_ephemeral_cpp_client_wrapper_core_implementations_cc"
     ],
+    "22": [
+      "components_spriteconfiguratormodal_actions",
+      "components_spriteconfiguratormodal_construction_stages",
+      "components_spriteconfiguratormodal_damage_stages",
+      "components_spriteconfiguratormodal_directions",
+      "components_spriteconfiguratormodal_tabid",
+      "components_spriteconfiguratormodal_uploadslot",
+      "front_src_components_spriteconfiguratormodal_tsx",
+      "front_src_lib_supabasestorage_ts",
+      "lib_supabasestorage_deletesprite",
+      "lib_supabasestorage_supabase",
+      "lib_supabasestorage_uploadblob",
+      "lib_supabasestorage_uploadsprite"
+    ],
+    "23": [
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_main_menu_dart_build",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_main_menu_dart_circularprogressindicator",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_main_menu_dart_container",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_main_menu_dart_mainmenuscreen",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_main_menu_dart_positioned",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_main_menu_dart_scaffold",
+      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_main_menu_dart_sizedbox",
+      "game_config_screen_dart",
+      "movil_lib_screens_main_menu_dart",
+      "package_provider_provider_dart",
+      "services_auth_service_dart",
+      "widgets_pixel_button_dart"
+    ],
     "24": [
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_city_planner_dart_cityplanner",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_city_planner_dart_doesbuildingblockcrucialpaths",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_military_director_dart_ismilitaryunit",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_military_director_dart_processmilitary",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_managers_combat_manager_dart_spawnprojectile",
-      "dart_math",
-      "military_director_dart",
-      "models_game_models_dart",
-      "movil_lib_game_engine_ai_city_planner_dart",
-      "movil_lib_game_engine_ai_military_director_dart",
-      "movil_lib_game_engine_managers_combat_manager_dart",
-      "pathfinding_manager_dart"
+      "components_spritegenerator_generatorstate",
+      "components_spritegenerator_spritegeneratorprops",
+      "front_src_components_spritegenerator_tsx",
+      "front_src_lib_spriteai_ts",
+      "lib_spriteai_generatesprite",
+      "lib_spriteai_generatewithopenai",
+      "lib_spriteai_generatewithstability",
+      "lib_spriteai_getprovidername",
+      "lib_spriteai_isspritegeneratorconfigured",
+      "lib_spriteai_spritegenerationoptions",
+      "lib_spriteai_style_suffixes"
     ],
     "25": [
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_worker_ai_dart_enter",
@@ -742,37 +681,11 @@
       "movil_lib_main_dart",
       "package_flutter_services_dart",
       "package_google_fonts_google_fonts_dart",
-      "package_provider_provider_dart",
       "screens_main_menu_dart",
+      "services_game_data_service_dart",
       "services_supabase_service_dart"
     ],
     "27": [
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_main_menu_dart_build",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_main_menu_dart_circularprogressindicator",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_main_menu_dart_container",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_main_menu_dart_mainmenuscreen",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_main_menu_dart_positioned",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_main_menu_dart_scaffold",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_screens_main_menu_dart_sizedbox",
-      "game_config_screen_dart",
-      "movil_lib_screens_main_menu_dart",
-      "services_auth_service_dart",
-      "widgets_pixel_button_dart"
-    ],
-    "28": [
-      "firebase_core",
-      "flame_engine",
-      "movil_linux_cmake",
-      "movil_pubspec",
-      "movil_windows_cmake",
-      "project_stack_backend",
-      "project_stack_database",
-      "project_stack_frontend",
-      "project_vision",
-      "rts_isometric_game",
-      "supabase_flutter"
-    ],
-    "29": [
       "movil_web_manifest_json",
       "web_manifest_background_color",
       "web_manifest_description",
@@ -785,20 +698,7 @@
       "web_manifest_start_url",
       "web_manifest_theme_color"
     ],
-    "30": [
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_firebase_options_dart_defaultfirebaseoptions",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_firebase_options_dart_unsupportederror",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_auth_service_dart_authservice",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_auth_service_dart_exception",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_services_auth_service_dart_syncprofile",
-      "movil_lib_firebase_options_dart",
-      "movil_lib_services_auth_service_dart",
-      "package_firebase_auth_firebase_auth_dart",
-      "package_firebase_core_firebase_core_dart",
-      "package_flutter_foundation_dart",
-      "package_google_sign_in_google_sign_in_dart"
-    ],
-    "31": [
+    "28": [
       "refactor_js",
       "rts_1_refactor_content",
       "rts_1_refactor_dashboardpath",
@@ -811,7 +711,7 @@
       "rts_1_refactor_path",
       "rts_1_refactor_statelines"
     ],
-    "32": [
+    "29": [
       "337ce265dc_input_assets",
       "337ce265dc_input_config",
       "337ce265dc_input_config_build_asset_types",
@@ -823,7 +723,7 @@
       "337ce265dc_input_user_defines",
       "movil_dart_tool_hooks_runner_objective_c_337ce265dc_input_json"
     ],
-    "33": [
+    "30": [
       "cpp_client_wrapper_core_implementations_textureregistrarimpl",
       "cpp_client_wrapper_plugin_registrar_addplugin",
       "cpp_client_wrapper_plugin_registrar_clearplugins",
@@ -835,7 +735,7 @@
       "flutter_plugin_registrar_flutter",
       "flutter_texture_registrar_flutter"
     ],
-    "34": [
+    "31": [
       "cpp_client_wrapper_byte_buffer_streams_flutter",
       "cpp_client_wrapper_standard_codec_standardcodecserializer",
       "cpp_client_wrapper_standard_codec_standardmessagecodec",
@@ -847,31 +747,7 @@
       "movil_windows_flutter_ephemeral_cpp_client_wrapper_include_flutter_byte_streams_h",
       "movil_windows_flutter_ephemeral_cpp_client_wrapper_include_flutter_encodable_value_h"
     ],
-    "35": [
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_ai_director_dart_aidirector",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_ai_director_dart_evaluatemilitary",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_ai_director_dart_evaluatepopulation",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_ai_director_dart_executeattackrun",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_ai_director_dart_processairesearch",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_ai_director_dart_processservertick",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_ai_director_dart_think",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_ai_director_dart_update",
-      "formation_manager_dart",
-      "movil_lib_game_engine_ai_ai_director_dart"
-    ],
-    "36": [
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_pathfinding_manager_dart_astarnode",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_pathfinding_manager_dart_binaryheap",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_pathfinding_manager_dart_bubbledown",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_pathfinding_manager_dart_bubbleup",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_pathfinding_manager_dart_heuristic",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_pathfinding_manager_dart_push",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_pathfinding_manager_dart_reconstructpath",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_pathfinding_manager_dart_update",
-      "dart_collection",
-      "movil_lib_game_engine_ai_pathfinding_manager_dart"
-    ],
-    "37": [
+    "32": [
       "back_src_app_controller_spec_ts",
       "back_src_app_controller_ts",
       "back_src_app_module_ts",
@@ -883,7 +759,7 @@
       "src_app_service_appservice_gethello",
       "src_main_bootstrap"
     ],
-    "38": [
+    "33": [
       "back_src_game_data_game_data_controller_ts",
       "game_data_game_data_controller_gamedatacontroller_addrelation",
       "game_data_game_data_controller_gamedatacontroller_constructor",
@@ -895,19 +771,7 @@
       "game_data_game_data_controller_gamedatacontroller_removerelation",
       "game_data_game_data_controller_gamedatacontroller_update"
     ],
-    "39": [
-      "rts_1_scratch_refactor_basepath",
-      "rts_1_scratch_refactor_content",
-      "rts_1_scratch_refactor_dashboardpath",
-      "rts_1_scratch_refactor_dirpath",
-      "rts_1_scratch_refactor_filestomove",
-      "rts_1_scratch_refactor_fs",
-      "rts_1_scratch_refactor_newpath",
-      "rts_1_scratch_refactor_oldpath",
-      "rts_1_scratch_refactor_path",
-      "scratch_refactor_js"
-    ],
-    "40": [
+    "34": [
       "back_package_jest",
       "back_package_jest_collectcoveragefrom",
       "back_package_jest_coveragedirectory",
@@ -918,7 +782,7 @@
       "back_package_jest_transform",
       "back_package_transform_t_j_s"
     ],
-    "41": [
+    "35": [
       "back_package_dependencies",
       "back_package_dependencies_nestjs_common",
       "back_package_dependencies_nestjs_config",
@@ -928,7 +792,7 @@
       "back_package_dependencies_rxjs",
       "back_package_dependencies_supabase_supabase_js"
     ],
-    "42": [
+    "36": [
       "flutter_event_channel_flutter",
       "flutter_event_sink_flutter",
       "flutter_event_stream_handler_flutter",
@@ -938,7 +802,7 @@
       "movil_windows_flutter_ephemeral_cpp_client_wrapper_include_flutter_event_stream_handler_functions_h",
       "movil_windows_flutter_ephemeral_cpp_client_wrapper_include_flutter_event_stream_handler_h"
     ],
-    "43": [
+    "37": [
       "dart_tool_package_config_configversion",
       "dart_tool_package_config_flutterroot",
       "dart_tool_package_config_flutterversion",
@@ -948,7 +812,7 @@
       "dart_tool_package_config_pubcache",
       "movil_dart_tool_package_config_json"
     ],
-    "44": [
+    "38": [
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_unit_fsm_dart_changestate",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_unit_fsm_dart_enter",
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_unit_fsm_dart_execute",
@@ -958,7 +822,7 @@
       "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_unit_fsm_dart_update",
       "movil_lib_game_engine_ai_unit_fsm_dart"
     ],
-    "45": [
+    "39": [
       "flask_library",
       "lancero_clean_png",
       "pillow_library",
@@ -968,7 +832,7 @@
       "unit_egy_chariot_clean_png",
       "unit_egy_medjay_clean_png"
     ],
-    "46": [
+    "40": [
       "app_google_services_client",
       "app_google_services_configuration_version",
       "app_google_services_project_info",
@@ -977,7 +841,7 @@
       "app_google_services_project_info_storage_bucket",
       "movil_android_app_google_services_json"
     ],
-    "47": [
+    "41": [
       "back_package_author",
       "back_package_description",
       "back_package_json",
@@ -986,16 +850,7 @@
       "back_package_private",
       "back_package_version"
     ],
-    "48": [
-      "back_test_jest_e2e_json",
-      "test_jest_e2e_modulefileextensions",
-      "test_jest_e2e_rootdir",
-      "test_jest_e2e_testenvironment",
-      "test_jest_e2e_testregex",
-      "test_jest_e2e_transform",
-      "test_jest_e2e_transform_t_j_s"
-    ],
-    "49": [
+    "42": [
       "cpp_client_wrapper_binary_messenger_impl_flutter",
       "cpp_client_wrapper_core_implementations_binarymessengerimpl",
       "flutter_basic_message_channel_flutter",
@@ -1004,25 +859,43 @@
       "movil_windows_flutter_ephemeral_cpp_client_wrapper_include_flutter_basic_message_channel_h",
       "movil_windows_flutter_ephemeral_cpp_client_wrapper_include_flutter_message_codec_h"
     ],
-    "50": [
-      "ai_pathfinding_manager_dart",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_managers_physics_manager_dart_ismilitaryunit",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_managers_physics_manager_dart_movealongpath",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_managers_physics_manager_dart_sendtoclosestdropoff",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_managers_physics_manager_dart_simulatephysics",
-      "movil_lib_game_engine_managers_physics_manager_dart",
-      "spatial_grid_dart"
+    "43": [
+      "front_src_lib_backgroundremover_ts",
+      "lib_backgroundremover_isrembgavailable",
+      "lib_backgroundremover_removebackground",
+      "lib_backgroundremover_removebackgroundfromfile",
+      "scratch_process_assets_main",
+      "scratch_process_assets_py",
+      "scratch_process_assets_upload_to_supabase"
     ],
-    "51": [
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_managers_production_manager_dart_updateproduction",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_managers_tech_tree_manager_dart_canresearch",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_managers_tech_tree_manager_dart_getunitstat",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_managers_tech_tree_manager_dart_researchtechnology",
-      "movil_lib_game_engine_managers_production_manager_dart",
-      "movil_lib_game_engine_managers_tech_tree_manager_dart",
-      "services_game_data_service_dart"
+    "44": [
+      "movil_windows_runner_main_cpp",
+      "movil_windows_runner_utils_cpp",
+      "movil_windows_runner_utils_h",
+      "runner_main_wwinmain",
+      "runner_utils_createandattachconsole",
+      "runner_utils_getcommandlinearguments",
+      "runner_utils_utf8fromutf16"
     ],
-    "52": [
+    "45": [
+      "back_game_snapshot_service",
+      "back_src_supabase_service_ts",
+      "game_snapshot_game_snapshot_service_gamesnapshotservice_constructor",
+      "game_snapshot_game_snapshot_service_gamesnapshotservice_getsnapshot",
+      "game_snapshot_game_snapshot_service_gamesnapshotservice_invalidatecache",
+      "src_supabase_service_supabaseservice_constructor",
+      "src_supabase_service_supabaseservice_getclient"
+    ],
+    "46": [
+      "back_test_jest_e2e_json",
+      "test_jest_e2e_modulefileextensions",
+      "test_jest_e2e_rootdir",
+      "test_jest_e2e_testenvironment",
+      "test_jest_e2e_testregex",
+      "test_jest_e2e_transform",
+      "test_jest_e2e_transform_t_j_s"
+    ],
+    "47": [
       "appicon_appiconset_contents_images",
       "appicon_appiconset_contents_info",
       "appicon_appiconset_contents_info_author",
@@ -1030,39 +903,7 @@
       "movil_ios_runner_assets_xcassets_appicon_appiconset_contents_json",
       "movil_macos_runner_assets_xcassets_appicon_appiconset_contents_json"
     ],
-    "53": [
-      "back_nest_cli_collection",
-      "back_nest_cli_compileroptions",
-      "back_nest_cli_compileroptions_deleteoutdir",
-      "back_nest_cli_json",
-      "back_nest_cli_schema",
-      "back_nest_cli_sourceroot"
-    ],
-    "54": [
-      "06e83407dfc404cceda9b0aa371e9809_dart_build_result_build_end",
-      "06e83407dfc404cceda9b0aa371e9809_dart_build_result_build_start",
-      "06e83407dfc404cceda9b0aa371e9809_dart_build_result_code_assets",
-      "06e83407dfc404cceda9b0aa371e9809_dart_build_result_data_assets",
-      "06e83407dfc404cceda9b0aa371e9809_dart_build_result_dependencies",
-      "movil_dart_tool_flutter_build_06e83407dfc404cceda9b0aa371e9809_dart_build_result_json"
-    ],
-    "55": [
-      "1195aef559544332b18e11c45644ae1b_dart_build_result_build_end",
-      "1195aef559544332b18e11c45644ae1b_dart_build_result_build_start",
-      "1195aef559544332b18e11c45644ae1b_dart_build_result_code_assets",
-      "1195aef559544332b18e11c45644ae1b_dart_build_result_data_assets",
-      "1195aef559544332b18e11c45644ae1b_dart_build_result_dependencies",
-      "movil_dart_tool_flutter_build_1195aef559544332b18e11c45644ae1b_dart_build_result_json"
-    ],
-    "56": [
-      "85ea687bd3af66622c350f332a7c60ce_dart_build_result_build_end",
-      "85ea687bd3af66622c350f332a7c60ce_dart_build_result_build_start",
-      "85ea687bd3af66622c350f332a7c60ce_dart_build_result_code_assets",
-      "85ea687bd3af66622c350f332a7c60ce_dart_build_result_data_assets",
-      "85ea687bd3af66622c350f332a7c60ce_dart_build_result_dependencies",
-      "movil_dart_tool_flutter_build_85ea687bd3af66622c350f332a7c60ce_dart_build_result_json"
-    ],
-    "57": [
+    "48": [
       "b1f2b02a42bc81fb291f124ac52881e5_dart_build_result_build_end",
       "b1f2b02a42bc81fb291f124ac52881e5_dart_build_result_build_start",
       "b1f2b02a42bc81fb291f124ac52881e5_dart_build_result_code_assets",
@@ -1070,15 +911,47 @@
       "b1f2b02a42bc81fb291f124ac52881e5_dart_build_result_dependencies",
       "movil_dart_tool_flutter_build_b1f2b02a42bc81fb291f124ac52881e5_dart_build_result_json"
     ],
-    "58": [
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_economy_director_dart_assignidleworkersglobal",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_economy_director_dart_balanceworkers",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_economy_director_dart_processeconomy",
-      "city_planner_dart",
-      "economy_director_dart",
-      "movil_lib_game_engine_ai_economy_director_dart"
+    "49": [
+      "back_nest_cli_collection",
+      "back_nest_cli_compileroptions",
+      "back_nest_cli_compileroptions_deleteoutdir",
+      "back_nest_cli_json",
+      "back_nest_cli_schema",
+      "back_nest_cli_sourceroot"
     ],
-    "59": [
+    "50": [
+      "components_techtreeeditor_buildingnode",
+      "components_techtreeeditor_eras",
+      "components_techtreeeditor_nodetypes",
+      "components_techtreeeditor_technode",
+      "components_techtreeeditor_unitnode",
+      "front_src_components_techtreeeditor_tsx"
+    ],
+    "51": [
+      "06e83407dfc404cceda9b0aa371e9809_dart_build_result_build_end",
+      "06e83407dfc404cceda9b0aa371e9809_dart_build_result_build_start",
+      "06e83407dfc404cceda9b0aa371e9809_dart_build_result_code_assets",
+      "06e83407dfc404cceda9b0aa371e9809_dart_build_result_data_assets",
+      "06e83407dfc404cceda9b0aa371e9809_dart_build_result_dependencies",
+      "movil_dart_tool_flutter_build_06e83407dfc404cceda9b0aa371e9809_dart_build_result_json"
+    ],
+    "52": [
+      "1195aef559544332b18e11c45644ae1b_dart_build_result_build_end",
+      "1195aef559544332b18e11c45644ae1b_dart_build_result_build_start",
+      "1195aef559544332b18e11c45644ae1b_dart_build_result_code_assets",
+      "1195aef559544332b18e11c45644ae1b_dart_build_result_data_assets",
+      "1195aef559544332b18e11c45644ae1b_dart_build_result_dependencies",
+      "movil_dart_tool_flutter_build_1195aef559544332b18e11c45644ae1b_dart_build_result_json"
+    ],
+    "53": [
+      "85ea687bd3af66622c350f332a7c60ce_dart_build_result_build_end",
+      "85ea687bd3af66622c350f332a7c60ce_dart_build_result_build_start",
+      "85ea687bd3af66622c350f332a7c60ce_dart_build_result_code_assets",
+      "85ea687bd3af66622c350f332a7c60ce_dart_build_result_data_assets",
+      "85ea687bd3af66622c350f332a7c60ce_dart_build_result_dependencies",
+      "movil_dart_tool_flutter_build_85ea687bd3af66622c350f332a7c60ce_dart_build_result_json"
+    ],
+    "54": [
       "back_game_snapshot_controller",
       "game_snapshot_game_snapshot_controller_gamesnapshotcontroller_constructor",
       "game_snapshot_game_snapshot_controller_gamesnapshotcontroller_getsnapshot",
@@ -1086,7 +959,7 @@
       "movil_game_data_service",
       "state_sync_status"
     ],
-    "60": [
+    "55": [
       "rembg_service_server_health",
       "rembg_service_server_rationale_1",
       "rembg_service_server_rationale_54",
@@ -1094,393 +967,335 @@
       "rembg_service_server_remove_bg_batch",
       "tools_rembg_service_server_py"
     ],
-    "61": [
-      "rts_1_scratch_flutter_content",
-      "rts_1_scratch_flutter_filepath",
-      "rts_1_scratch_flutter_fs",
-      "rts_1_scratch_flutter_newsnapshotclass",
-      "rts_1_scratch_flutter_path",
-      "scratch_flutter_js"
-    ],
-    "62": [
+    "56": [
       "launchimage_imageset_contents_images",
       "launchimage_imageset_contents_info",
       "launchimage_imageset_contents_info_author",
       "launchimage_imageset_contents_info_version",
       "movil_ios_runner_assets_xcassets_launchimage_imageset_contents_json"
     ],
-    "63": [
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_formation_manager_dart_dispatchorder",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_formation_manager_dart_march",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_ai_formation_manager_dart_squadformation",
-      "movil_lib_game_engine_ai_formation_manager_dart",
-      "worker_ai_dart"
+    "57": [
+      "movil_pubspec",
+      "project_stack_backend",
+      "project_stack_database",
+      "project_stack_frontend",
+      "project_vision"
     ],
-    "64": [
-      "back_game_snapshot_service",
-      "game_snapshot_game_snapshot_service_gamesnapshotservice",
-      "game_snapshot_game_snapshot_service_gamesnapshotservice_constructor",
-      "game_snapshot_game_snapshot_service_gamesnapshotservice_getsnapshot",
-      "game_snapshot_game_snapshot_service_gamesnapshotservice_invalidatecache"
-    ],
-    "65": [
-      "back_src_supabase_service_ts",
-      "movil_lib_services_supabase_service_dart",
-      "package_supabase_flutter_supabase_flutter_dart",
-      "src_supabase_service_supabaseservice_constructor",
-      "src_supabase_service_supabaseservice_getclient"
-    ],
-    "66": [
+    "58": [
       "movil_ios_runnertests_runnertests_swift",
       "movil_macos_runnertests_runnertests_swift",
       "runnertests_runnertests_runnertests",
       "runnertests_runnertests_runnertests_testexample",
       "xctestcase"
     ],
-    "67": [
-      "rts_1_scratch_colors_basepath",
-      "rts_1_scratch_colors_fs",
-      "rts_1_scratch_colors_path",
-      "rts_1_scratch_colors_recolorfile",
-      "scratch_colors_js"
-    ],
-    "68": [
-      "rts_1_scratch_redesign_basepath",
-      "rts_1_scratch_redesign_fs",
-      "rts_1_scratch_redesign_path",
-      "rts_1_scratch_redesign_redesignfile",
-      "scratch_redesign_js"
-    ],
-    "69": [
-      "06e83407dfc404cceda9b0aa371e9809_native_assets_format_version",
-      "06e83407dfc404cceda9b0aa371e9809_native_assets_native_assets",
-      "1195aef559544332b18e11c45644ae1b_native_assets_format_version",
-      "1195aef559544332b18e11c45644ae1b_native_assets_native_assets"
-    ],
-    "70": [
-      "337ce265dc_output_assets_for_linking",
-      "337ce265dc_output_status",
-      "337ce265dc_output_timestamp",
-      "movil_dart_tool_hooks_runner_objective_c_337ce265dc_output_json"
-    ],
-    "71": [
-      "back_test_db2_createclient",
-      "back_test_db2_js",
-      "back_test_db2_run",
-      "back_test_db2_supabase"
-    ],
-    "72": [
-      "back_test_db_createclient",
-      "back_test_db_js",
-      "back_test_db_run",
-      "back_test_db_supabase"
-    ],
-    "73": [
-      "back_update_cats_createclient",
-      "back_update_cats_js",
-      "back_update_cats_run",
-      "back_update_cats_supabase"
-    ],
-    "74": [
-      "building_centro_urbano_clean",
-      "building_cuartel_clean",
-      "building_establo_clean",
-      "caballero_clean"
-    ],
-    "75": [
-      "dart_tool_package_graph_configversion",
-      "dart_tool_package_graph_packages",
-      "dart_tool_package_graph_roots",
-      "movil_dart_tool_package_graph_json"
-    ],
-    "76": [
-      "ephemeral_flutter_lldb_helper_handle_new_rx_page",
-      "ephemeral_flutter_lldb_helper_lldb_init_module",
-      "ephemeral_flutter_lldb_helper_rationale_8",
-      "movil_ios_flutter_ephemeral_flutter_lldb_helper_py"
-    ],
-    "77": [
-      "app_layout_inter",
-      "app_layout_metadata",
-      "app_layout_rootlayout",
-      "front_src_app_layout_tsx"
-    ],
-    "78": [
+    "59": [
       "196c15e30a_output_assets_for_linking",
       "196c15e30a_output_status",
       "196c15e30a_output_timestamp",
       "movil_dart_tool_hooks_runner_objective_c_196c15e30a_output_json"
     ],
-    "79": [
+    "60": [
       "2578b5eb1e_output_assets_for_linking",
       "2578b5eb1e_output_status",
       "2578b5eb1e_output_timestamp",
       "movil_dart_tool_hooks_runner_objective_c_2578b5eb1e_output_json"
     ],
-    "80": [
-      "2578b5eb1e_hook_dependencies_hash_file_environment",
-      "2578b5eb1e_hook_dependencies_hash_file_file_system",
-      "movil_dart_tool_hooks_runner_objective_c_2578b5eb1e_hook_dependencies_hash_file_json"
+    "61": [
+      "337ce265dc_output_assets_for_linking",
+      "337ce265dc_output_status",
+      "337ce265dc_output_timestamp",
+      "movil_dart_tool_hooks_runner_objective_c_337ce265dc_output_json"
     ],
-    "81": [
-      "337ce265dc_dependencies_dependencies_hash_file_environment",
-      "337ce265dc_dependencies_dependencies_hash_file_file_system",
-      "movil_dart_tool_hooks_runner_objective_c_337ce265dc_dependencies_dependencies_hash_file_json"
+    "62": [
+      "app_layout_inter",
+      "app_layout_metadata",
+      "app_layout_rootlayout",
+      "front_src_app_layout_tsx"
     ],
-    "82": [
-      "back_tsconfig_build_exclude",
-      "back_tsconfig_build_extends",
-      "back_tsconfig_build_json"
+    "63": [
+      "building_centro_urbano_clean",
+      "building_cuartel_clean",
+      "building_establo_clean",
+      "caballero_clean"
     ],
-    "83": [
-      "85ea687bd3af66622c350f332a7c60ce_native_assets_format_version",
-      "85ea687bd3af66622c350f332a7c60ce_native_assets_native_assets",
-      "movil_dart_tool_flutter_build_85ea687bd3af66622c350f332a7c60ce_native_assets_json"
+    "64": [
+      "ephemeral_flutter_lldb_helper_handle_new_rx_page",
+      "ephemeral_flutter_lldb_helper_lldb_init_module",
+      "ephemeral_flutter_lldb_helper_rationale_8",
+      "movil_ios_flutter_ephemeral_flutter_lldb_helper_py"
     ],
-    "84": [
-      "b1f2b02a42bc81fb291f124ac52881e5_native_assets_format_version",
-      "b1f2b02a42bc81fb291f124ac52881e5_native_assets_native_assets",
-      "movil_dart_tool_flutter_build_b1f2b02a42bc81fb291f124ac52881e5_native_assets_json"
+    "65": [
+      "dart_tool_package_graph_configversion",
+      "dart_tool_package_graph_packages",
+      "dart_tool_package_graph_roots",
+      "movil_dart_tool_package_graph_json"
     ],
-    "85": [
+    "66": [
       "196c15e30a_dependencies_dependencies_hash_file_environment",
       "196c15e30a_dependencies_dependencies_hash_file_file_system",
       "movil_dart_tool_hooks_runner_objective_c_196c15e30a_dependencies_dependencies_hash_file_json"
     ],
-    "86": [
-      "196c15e30a_hook_dependencies_hash_file_environment",
-      "196c15e30a_hook_dependencies_hash_file_file_system",
-      "movil_dart_tool_hooks_runner_objective_c_196c15e30a_hook_dependencies_hash_file_json"
-    ],
-    "87": [
-      "2578b5eb1e_dependencies_dependencies_hash_file_environment",
-      "2578b5eb1e_dependencies_dependencies_hash_file_file_system",
-      "movil_dart_tool_hooks_runner_objective_c_2578b5eb1e_dependencies_dependencies_hash_file_json"
-    ],
-    "88": [
+    "67": [
       "337ce265dc_hook_dependencies_hash_file_environment",
       "337ce265dc_hook_dependencies_hash_file_file_system",
       "movil_dart_tool_hooks_runner_objective_c_337ce265dc_hook_dependencies_hash_file_json"
     ],
-    "89": [
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_managers_vision_manager_dart_initvisiblemap",
-      "c_users_rober_onedrive_escritorio_pruebasraras_rts_1_movil_lib_game_engine_managers_vision_manager_dart_updatevisibility",
-      "movil_lib_game_engine_managers_vision_manager_dart"
+    "68": [
+      "85ea687bd3af66622c350f332a7c60ce_native_assets_format_version",
+      "85ea687bd3af66622c350f332a7c60ce_native_assets_native_assets",
+      "movil_dart_tool_flutter_build_85ea687bd3af66622c350f332a7c60ce_native_assets_json"
     ],
-    "90": [
-      "back_readme",
-      "nestjs_framework",
-      "nestjs_mau"
+    "69": [
+      "b1f2b02a42bc81fb291f124ac52881e5_native_assets_format_version",
+      "b1f2b02a42bc81fb291f124ac52881e5_native_assets_native_assets",
+      "movil_dart_tool_flutter_build_b1f2b02a42bc81fb291f124ac52881e5_native_assets_json"
     ],
-    "91": [
+    "70": [
+      "back_tsconfig_build_exclude",
+      "back_tsconfig_build_extends",
+      "back_tsconfig_build_json"
+    ],
+    "71": [
+      "app_page_home",
+      "app_page_metadata",
+      "front_src_app_page_tsx"
+    ],
+    "72": [
+      "1195aef559544332b18e11c45644ae1b_native_assets_format_version",
+      "1195aef559544332b18e11c45644ae1b_native_assets_native_assets",
+      "movil_dart_tool_flutter_build_1195aef559544332b18e11c45644ae1b_native_assets_json"
+    ],
+    "73": [
+      "196c15e30a_hook_dependencies_hash_file_environment",
+      "196c15e30a_hook_dependencies_hash_file_file_system",
+      "movil_dart_tool_hooks_runner_objective_c_196c15e30a_hook_dependencies_hash_file_json"
+    ],
+    "74": [
+      "2578b5eb1e_dependencies_dependencies_hash_file_environment",
+      "2578b5eb1e_dependencies_dependencies_hash_file_file_system",
+      "movil_dart_tool_hooks_runner_objective_c_2578b5eb1e_dependencies_dependencies_hash_file_json"
+    ],
+    "75": [
+      "2578b5eb1e_hook_dependencies_hash_file_environment",
+      "2578b5eb1e_hook_dependencies_hash_file_file_system",
+      "movil_dart_tool_hooks_runner_objective_c_2578b5eb1e_hook_dependencies_hash_file_json"
+    ],
+    "76": [
+      "337ce265dc_dependencies_dependencies_hash_file_environment",
+      "337ce265dc_dependencies_dependencies_hash_file_file_system",
+      "movil_dart_tool_hooks_runner_objective_c_337ce265dc_dependencies_dependencies_hash_file_json"
+    ],
+    "77": [
+      "flutter_generated_plugin_registrant_registerplugins",
+      "movil_windows_flutter_generated_plugin_registrant_cc",
+      "movil_windows_flutter_generated_plugin_registrant_h"
+    ],
+    "78": [
       "flutterscenedelegate",
       "movil_ios_runner_scenedelegate_swift",
       "runner_scenedelegate_scenedelegate"
     ],
-    "92": [
+    "79": [
+      "06e83407dfc404cceda9b0aa371e9809_native_assets_format_version",
+      "06e83407dfc404cceda9b0aa371e9809_native_assets_native_assets"
+    ],
+    "80": [
       "building_granja_clean",
       "carreta_clean"
     ],
-    "93": [
+    "81": [
       "docker_compose_adminer",
       "docker_compose_db"
     ],
-    "94": [
-      "front_agents",
-      "front_readme"
-    ],
-    "95": [
+    "82": [
       "front_postcss_config_config",
       "front_postcss_config_mjs"
     ],
-    "96": [
+    "83": [
       "hero_cleopatra_unit_clean",
       "hero_julius_caesar_unit_clean"
     ],
-    "97": [
+    "84": [
       "front_next_env_d_ts"
     ],
-    "98": [
+    "85": [
       "front_next_config_ts"
     ],
-    "99": [
+    "86": [
       "movil_dart_tool_flutter_build_06e83407dfc404cceda9b0aa371e9809_outputs_json"
     ],
-    "100": [
+    "87": [
       "movil_dart_tool_flutter_build_1195aef559544332b18e11c45644ae1b_outputs_json"
     ],
-    "101": [
+    "88": [
       "movil_dart_tool_flutter_build_85ea687bd3af66622c350f332a7c60ce_outputs_json"
     ],
-    "102": [
+    "89": [
       "movil_dart_tool_flutter_build_b1f2b02a42bc81fb291f124ac52881e5_outputs_json"
     ],
-    "103": [
+    "90": [
       "movil_android_build_gradle_kts"
     ],
-    "104": [
+    "91": [
       "movil_android_settings_gradle_kts"
     ],
-    "105": [
+    "92": [
       "movil_android_app_build_gradle_kts"
     ],
-    "106": [
+    "93": [
       "rts_isometric_game_mainactivity_mainactivity"
     ],
-    "107": [
+    "94": [
       "movil_ios_flutter_flutter_export_environment_sh"
     ],
-    "108": [
+    "95": [
       "movil_ios_runner_runner_bridging_header_h"
     ],
-    "109": [
+    "96": [
       "movil_macos_flutter_ephemeral_flutter_export_environment_sh"
     ],
-    "110": [
+    "97": [
       "movil_scratch_analyze_braces_py"
     ],
-    "111": [
+    "98": [
       "movil_scratch_analyze_braces_depth_py"
     ],
-    "112": [
+    "99": [
       "movil_scratch_check_class_closure_py"
     ],
-    "113": [
+    "100": [
       "movil_scratch_check_lines_py"
     ],
-    "114": [
+    "101": [
       "movil_scratch_count_braces_py"
     ],
-    "115": [
+    "102": [
       "movil_scratch_final_brace_check_py"
     ],
-    "116": [
+    "103": [
       "movil_scratch_find_class_closure_py"
     ],
-    "117": [
+    "104": [
       "movil_scratch_find_first_negative_py"
     ],
-    "118": [
+    "105": [
       "movil_scratch_find_negative_depth_py"
     ],
-    "119": [
+    "106": [
       "movil_scratch_trace_braces_py"
     ],
-    "120": [
+    "107": [
       "movil_scratch_verify_depth_full_py"
     ],
-    "121": [
+    "108": [
       "building_galeria_de_tiro_clean"
     ],
-    "122": [
+    "109": [
       "building_mina_clean"
     ],
-    "123": [
+    "110": [
       "building_torre_defensa_clean"
     ],
-    "124": [
+    "111": [
       "roadmap_m1"
     ],
-    "125": [
+    "112": [
       "state_rembg_service"
-    ],
-    "126": [
-      "movil_refactor_py"
     ]
   },
   "cohesion": {
-    "0": 0.05026300409117475,
-    "1": 0.037037037037037035,
-    "2": 0.04081632653061224,
-    "3": 0.046511627906976744,
-    "4": 0.04878048780487805,
-    "5": 0.0858974358974359,
+    "0": 0.04609929078014184,
+    "1": 0.045454545454545456,
+    "2": 0.04878048780487805,
+    "3": 0.05,
+    "4": 0.05405405405405406,
+    "5": 0.10795454545454546,
     "6": 0.06451612903225806,
     "7": 0.06896551724137931,
     "8": 0.07407407407407407,
-    "9": 0.14333333333333334,
+    "9": 0.08695652173913043,
     "10": 0.08695652173913043,
     "11": 0.08695652173913043,
-    "12": 0.08695652173913043,
-    "13": 0.09090909090909091,
-    "14": 0.09523809523809523,
-    "15": 0.09523809523809523,
-    "16": 0.1,
-    "17": 0.10526315789473684,
-    "18": 0.11764705882352941,
-    "19": 0.25833333333333336,
-    "20": 0.1978021978021978,
-    "21": 0.18681318681318682,
-    "22": 0.15384615384615385,
+    "12": 0.09090909090909091,
+    "13": 0.09523809523809523,
+    "14": 0.1,
+    "15": 0.14619883040935672,
+    "16": 0.1111111111111111,
+    "17": 0.11764705882352941,
+    "18": 0.25833333333333336,
+    "19": 0.1978021978021978,
+    "20": 0.15384615384615385,
+    "21": 0.16666666666666666,
+    "22": 0.18181818181818182,
     "23": 0.16666666666666666,
-    "24": 0.21212121212121213,
+    "24": 0.2909090909090909,
     "25": 0.18181818181818182,
     "26": 0.18181818181818182,
     "27": 0.18181818181818182,
     "28": 0.18181818181818182,
-    "29": 0.18181818181818182,
-    "30": 0.2,
-    "31": 0.18181818181818182,
-    "32": 0.2,
-    "33": 0.2222222222222222,
+    "29": 0.2,
+    "30": 0.2222222222222222,
+    "31": 0.2222222222222222,
+    "32": 0.24444444444444444,
+    "33": 0.2,
     "34": 0.2222222222222222,
-    "35": 0.2,
-    "36": 0.2,
-    "37": 0.24444444444444444,
-    "38": 0.2,
-    "39": 0.2,
-    "40": 0.2222222222222222,
-    "41": 0.25,
-    "42": 0.32142857142857145,
-    "43": 0.25,
-    "44": 0.25,
-    "45": 0.25,
+    "35": 0.25,
+    "36": 0.32142857142857145,
+    "37": 0.25,
+    "38": 0.25,
+    "39": 0.25,
+    "40": 0.2857142857142857,
+    "41": 0.2857142857142857,
+    "42": 0.2857142857142857,
+    "43": 0.42857142857142855,
+    "44": 0.42857142857142855,
+    "45": 0.2857142857142857,
     "46": 0.2857142857142857,
-    "47": 0.2857142857142857,
-    "48": 0.2857142857142857,
-    "49": 0.2857142857142857,
-    "50": 0.2857142857142857,
-    "51": 0.2857142857142857,
-    "52": 0.4,
+    "47": 0.4,
+    "48": 0.3333333333333333,
+    "49": 0.3333333333333333,
+    "50": 0.3333333333333333,
+    "51": 0.3333333333333333,
+    "52": 0.3333333333333333,
     "53": 0.3333333333333333,
     "54": 0.3333333333333333,
     "55": 0.3333333333333333,
-    "56": 0.3333333333333333,
-    "57": 0.3333333333333333,
-    "58": 0.3333333333333333,
-    "59": 0.3333333333333333,
-    "60": 0.3333333333333333,
-    "61": 0.3333333333333333,
-    "62": 0.4,
-    "63": 0.4,
-    "64": 0.7,
-    "65": 0.4,
-    "66": 0.4,
-    "67": 0.4,
-    "68": 0.4,
-    "69": 0.5,
-    "70": 0.5,
-    "71": 0.5,
-    "72": 0.5,
-    "73": 0.5,
-    "74": 0.5,
-    "75": 0.5,
-    "76": 0.5,
-    "77": 0.5,
-    "78": 0.5,
-    "79": 0.5,
-    "80": 0.6666666666666666,
-    "81": 0.6666666666666666,
-    "82": 0.6666666666666666,
-    "83": 0.6666666666666666,
-    "84": 0.6666666666666666,
-    "85": 0.6666666666666666,
-    "86": 0.6666666666666666,
-    "87": 0.6666666666666666,
-    "88": 0.6666666666666666,
-    "89": 0.6666666666666666,
-    "90": 0.6666666666666666,
-    "91": 0.6666666666666666,
+    "56": 0.4,
+    "57": 0.4,
+    "58": 0.4,
+    "59": 0.5,
+    "60": 0.5,
+    "61": 0.5,
+    "62": 0.5,
+    "63": 0.5,
+    "64": 0.5,
+    "65": 0.5,
+    "66": 0.6666666666666666,
+    "67": 0.6666666666666666,
+    "68": 0.6666666666666666,
+    "69": 0.6666666666666666,
+    "70": 0.6666666666666666,
+    "71": 0.6666666666666666,
+    "72": 0.6666666666666666,
+    "73": 0.6666666666666666,
+    "74": 0.6666666666666666,
+    "75": 0.6666666666666666,
+    "76": 0.6666666666666666,
+    "77": 0.6666666666666666,
+    "78": 0.6666666666666666,
+    "79": 1.0,
+    "80": 1.0,
+    "81": 1.0,
+    "82": 1.0,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
     "92": 1.0,
     "93": 1.0,
     "94": 1.0,
@@ -1501,28 +1316,9 @@
     "109": 1.0,
     "110": 1.0,
     "111": 1.0,
-    "112": 1.0,
-    "113": 1.0,
-    "114": 1.0,
-    "115": 1.0,
-    "116": 1.0,
-    "117": 1.0,
-    "118": 1.0,
-    "119": 1.0,
-    "120": 1.0,
-    "121": 1.0,
-    "122": 1.0,
-    "123": 1.0,
-    "124": 1.0,
-    "125": 1.0,
-    "126": 1.0
+    "112": 1.0
   },
   "gods": [
-    {
-      "id": "game_state_dart",
-      "label": "game_state.dart",
-      "degree": 58
-    },
     {
       "id": "back_tsconfig_compileroptions",
       "label": "compilerOptions",
@@ -1532,16 +1328,6 @@
       "id": "front_tsconfig_compileroptions",
       "label": "compilerOptions",
       "degree": 16
-    },
-    {
-      "id": "models_game_models_dart",
-      "label": "../models/game_models.dart",
-      "degree": 15
-    },
-    {
-      "id": "editors_spritegenerator_spritegenerator",
-      "label": "SpriteGenerator()",
-      "degree": 15
     },
     {
       "id": "cpp_client_wrapper_flutter_engine_flutterengine",
@@ -1554,19 +1340,34 @@
       "degree": 13
     },
     {
-      "id": "dart_math",
-      "label": "dart:math",
-      "degree": 13
-    },
-    {
       "id": "runner_my_application_myapplication",
       "label": "_MyApplication",
       "degree": 13
     },
     {
+      "id": "cpp_client_wrapper_plugin_registrar_pluginregistrar",
+      "label": "PluginRegistrar()",
+      "degree": 12
+    },
+    {
+      "id": "back_package_jest",
+      "label": "jest",
+      "degree": 9
+    },
+    {
       "id": "package_flutter_material_dart",
       "label": "package:flutter/material.dart",
-      "degree": 12
+      "degree": 9
+    },
+    {
+      "id": "cpp_client_wrapper_core_implementations_binarymessengerimpl",
+      "label": "BinaryMessengerImpl()",
+      "degree": 9
+    },
+    {
+      "id": "models_game_models_dart",
+      "label": "../models/game_models.dart",
+      "degree": 8
     }
   ],
   "surprises": [
@@ -1593,17 +1394,6 @@
       "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `GameDataService (Flutter)` unexpectedly reaches hub `GameSnapshotController`"
     },
     {
-      "source": "Flutter Dependencies",
-      "target": "Supabase (PostgreSQL)",
-      "source_files": [
-        "movil/pubspec.yaml",
-        ".planning/PROJECT.md"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "references",
-      "why": "connects across different repos/directories; peripheral node `Supabase (PostgreSQL)` unexpectedly reaches hub `Flutter Dependencies`"
-    },
-    {
       "source": "main()",
       "target": "removeBackground()",
       "source_files": [
@@ -1624,10 +1414,21 @@
       "confidence": "INFERRED",
       "relation": "calls",
       "why": "inferred connection - not explicitly stated in source; peripheral node `main()` unexpectedly reaches hub `_MyApplication`"
+    },
+    {
+      "source": "flutter()",
+      "target": "DecodeMessageInternal()",
+      "source_files": [
+        "movil/windows/flutter/ephemeral/cpp_client_wrapper/include/flutter/message_codec.h",
+        "movil/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
     }
   ],
   "tokens": {
-    "input": 163709,
-    "output": 1247
+    "input": 407683,
+    "output": 3496
   }
 }

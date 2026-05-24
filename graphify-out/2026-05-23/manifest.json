@@ -75,9 +75,9 @@
     "semantic_hash": "0c3d3fc92108c0bffaf5984c417f98fd"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\src\\game-snapshot\\game-snapshot.service.ts": {
-    "mtime": 1779417100.0667665,
-    "ast_hash": "95e6676fbce2fa340c8a046ec434b4a1",
-    "semantic_hash": "95e6676fbce2fa340c8a046ec434b4a1"
+    "mtime": 1778463697.691039,
+    "ast_hash": "891f95ae980040f50ab21ef8f50c7732",
+    "semantic_hash": "891f95ae980040f50ab21ef8f50c7732"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\test\\app.e2e-spec.ts": {
     "mtime": 1777937638.582435,
@@ -134,15 +134,45 @@
     "ast_hash": "7f6519b43aca457e76086ef0c66bc41f",
     "semantic_hash": "7f6519b43aca457e76086ef0c66bc41f"
   },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\AdvancedSections.tsx": {
+    "mtime": 1778356512.8896573,
+    "ast_hash": "aee84594ee333c1b2398e813c95ed5ce",
+    "semantic_hash": "aee84594ee333c1b2398e813c95ed5ce"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\CivWizardModal.tsx": {
+    "mtime": 1778464138.3410137,
+    "ast_hash": "131d2d8c0177a706f20f073458710713",
+    "semantic_hash": "131d2d8c0177a706f20f073458710713"
+  },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\Dashboard.tsx": {
-    "mtime": 1779420253.3045635,
-    "ast_hash": "ebfa21f6c4184019a5e23864a8db8871",
-    "semantic_hash": "ebfa21f6c4184019a5e23864a8db8871"
+    "mtime": 1778465091.3801813,
+    "ast_hash": "600f8db1babd4a8917435aff8c6b64ed",
+    "semantic_hash": "600f8db1babd4a8917435aff8c6b64ed"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\EntityModal.tsx": {
-    "mtime": 1779419806.306985,
-    "ast_hash": "d5ed94cf69bc923ee2f38124db15857b",
-    "semantic_hash": "d5ed94cf69bc923ee2f38124db15857b"
+    "mtime": 1778465027.6789887,
+    "ast_hash": "866c1d79724b2b884156fcf28f93c979",
+    "semantic_hash": "866c1d79724b2b884156fcf28f93c979"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\OverrideModal.tsx": {
+    "mtime": 1778356064.885025,
+    "ast_hash": "ff5caa67efc185e67d501ef37af5b6c5",
+    "semantic_hash": "ff5caa67efc185e67d501ef37af5b6c5"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\SpriteConfiguratorModal.tsx": {
+    "mtime": 1778355626.995153,
+    "ast_hash": "02bcb2e1be21423bc8cbb6b40393a14f",
+    "semantic_hash": "02bcb2e1be21423bc8cbb6b40393a14f"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\SpriteGenerator.tsx": {
+    "mtime": 1778353993.4591658,
+    "ast_hash": "32104ede8383e22d9b2c38ee1cb0505b",
+    "semantic_hash": "32104ede8383e22d9b2c38ee1cb0505b"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\TechTreeEditor.tsx": {
+    "mtime": 1778464242.4007006,
+    "ast_hash": "c653456d80dd15821b4b67b9ec1d15e2",
+    "semantic_hash": "c653456d80dd15821b4b67b9ec1d15e2"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\lib\\api.ts": {
     "mtime": 1777940039.8121407,
@@ -395,54 +425,69 @@
     "semantic_hash": "4dd0629b3216a539b4975dd10d6ebe30"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\main.dart": {
-    "mtime": 1779590054.876924,
-    "ast_hash": "283291c45d52763021c4d11d005d80d5",
-    "semantic_hash": "283291c45d52763021c4d11d005d80d5"
+    "mtime": 1778463791.6167085,
+    "ast_hash": "27cef434f4022483fe6cee25970a5b48",
+    "semantic_hash": "27cef434f4022483fe6cee25970a5b48"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\game_state.dart": {
-    "mtime": 1779592734.87435,
-    "ast_hash": "50f962a692501669f1d5bdd12099e322",
-    "semantic_hash": "50f962a692501669f1d5bdd12099e322"
+    "mtime": 1778476218.9632814,
+    "ast_hash": "40a55769606d8bc7f043efddf0cc9340",
+    "semantic_hash": "40a55769606d8bc7f043efddf0cc9340"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\map_generator.dart": {
-    "mtime": 1779490184.426731,
-    "ast_hash": "6a54b94454a344925149cbf1b771c571",
-    "semantic_hash": "6a54b94454a344925149cbf1b771c571"
+    "mtime": 1777928602.2668538,
+    "ast_hash": "b6fea0e96169ea00aa95d1fd3ee6ded7",
+    "semantic_hash": "b6fea0e96169ea00aa95d1fd3ee6ded7"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\ai\\ai_director.dart": {
-    "mtime": 1779593694.2284424,
-    "ast_hash": "c09b9d83928fe52434b7ea0a456e5897",
-    "semantic_hash": "c09b9d83928fe52434b7ea0a456e5897"
+    "mtime": 1777709296.850899,
+    "ast_hash": "516ed62568a3ff5ccd8fc258b4de2060",
+    "semantic_hash": "516ed62568a3ff5ccd8fc258b4de2060"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\ai\\city_planner.dart": {
-    "mtime": 1779464983.8832626,
-    "ast_hash": "af3d4ba7bedadb1780cef225fe78c185",
-    "semantic_hash": "af3d4ba7bedadb1780cef225fe78c185"
+    "mtime": 1777935026.1105697,
+    "ast_hash": "30ffa37452990b8234e9a37117d41a08",
+    "semantic_hash": "30ffa37452990b8234e9a37117d41a08"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\ai\\formation_manager.dart": {
+    "mtime": 1777709282.0526261,
+    "ast_hash": "2dc165a4fe2c12d8de1a6984e27170fb",
+    "semantic_hash": "2dc165a4fe2c12d8de1a6984e27170fb"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\ai\\pathfinding_manager.dart": {
-    "mtime": 1779595550.986804,
-    "ast_hash": "cdfded62568b3e7baea9e3d136ca34f2",
-    "semantic_hash": "cdfded62568b3e7baea9e3d136ca34f2"
+    "mtime": 1777933616.9828806,
+    "ast_hash": "092e1a78bd6573141c3f8ca53259c97f",
+    "semantic_hash": "092e1a78bd6573141c3f8ca53259c97f"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\ai\\unit_fsm.dart": {
+    "mtime": 1777708482.9489868,
+    "ast_hash": "c20cea66d5f23e275e7687078b568c67",
+    "semantic_hash": "c20cea66d5f23e275e7687078b568c67"
+  },
+  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\ai\\worker_ai.dart": {
+    "mtime": 1777708484.966905,
+    "ast_hash": "4298326d2972901761f71ca251a75138",
+    "semantic_hash": "4298326d2972901761f71ca251a75138"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\models\\game_models.dart": {
-    "mtime": 1779494179.5849724,
-    "ast_hash": "47ed5cac321e226d95ad4c80b33faed0",
-    "semantic_hash": "47ed5cac321e226d95ad4c80b33faed0"
+    "mtime": 1778473185.440845,
+    "ast_hash": "ba77b331eb77cd6bb9b7f29ac7e7aba6",
+    "semantic_hash": "ba77b331eb77cd6bb9b7f29ac7e7aba6"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\rendering\\isometric_renderer.dart": {
-    "mtime": 1779593405.237504,
-    "ast_hash": "e8bda77e9b639604a612883298388145",
-    "semantic_hash": "e8bda77e9b639604a612883298388145"
+    "mtime": 1778475273.1392949,
+    "ast_hash": "6eef549bb8fa197a1df0164858861450",
+    "semantic_hash": "6eef549bb8fa197a1df0164858861450"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\screens\\game_config_screen.dart": {
-    "mtime": 1779588657.2374468,
-    "ast_hash": "339278812112aad26f411c9d58596d45",
-    "semantic_hash": "339278812112aad26f411c9d58596d45"
+    "mtime": 1778465856.5034077,
+    "ast_hash": "d1fd056df9d5844724115d19fc4a702c",
+    "semantic_hash": "d1fd056df9d5844724115d19fc4a702c"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\screens\\game_screen.dart": {
-    "mtime": 1779594733.1527958,
-    "ast_hash": "69312b289c758897836db233b17f8d07",
-    "semantic_hash": "69312b289c758897836db233b17f8d07"
+    "mtime": 1777924324.7383595,
+    "ast_hash": "93e3663dcc53cd3669c0875a48eb28be",
+    "semantic_hash": "93e3663dcc53cd3669c0875a48eb28be"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\screens\\main_menu.dart": {
     "mtime": 1777610078.8611746,
@@ -455,9 +500,9 @@
     "semantic_hash": "b1abbe3050900510ae9015a869fdb540"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\services\\game_data_service.dart": {
-    "mtime": 1779494189.5348299,
-    "ast_hash": "f5561d1706b9651d9152e6a6e4c87c58",
-    "semantic_hash": "f5561d1706b9651d9152e6a6e4c87c58"
+    "mtime": 1778475322.3491735,
+    "ast_hash": "92752dbc8c9651002c27f394d2d6c5ed",
+    "semantic_hash": "92752dbc8c9651002c27f394d2d6c5ed"
   },
   "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\services\\supabase_service.dart": {
     "mtime": 1777525001.129243,
@@ -873,165 +918,5 @@
     "mtime": 1778353784.9034512,
     "ast_hash": "0db96125012215d921b5cdb04d6a059a",
     "semantic_hash": "0db96125012215d921b5cdb04d6a059a"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\scratch_colors.js": {
-    "mtime": 1779419794.6476808,
-    "ast_hash": "f61ef47e88826c6162b9cd20a20def80",
-    "semantic_hash": "f61ef47e88826c6162b9cd20a20def80"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\scratch_flutter.js": {
-    "mtime": 1779418008.3244488,
-    "ast_hash": "04332c21221c289d2604f82d9552e733",
-    "semantic_hash": "04332c21221c289d2604f82d9552e733"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\scratch_redesign.js": {
-    "mtime": 1779417855.343194,
-    "ast_hash": "817609d2d84ac5b022663a1bf7b68ae7",
-    "semantic_hash": "817609d2d84ac5b022663a1bf7b68ae7"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\scratch_refactor.js": {
-    "mtime": 1779419989.923991,
-    "ast_hash": "63e0e2b1ff572c0ecc53d560722f3ac9",
-    "semantic_hash": "63e0e2b1ff572c0ecc53d560722f3ac9"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\supabase_schema.sql": {
-    "mtime": 1779417085.3134584,
-    "ast_hash": "7370ea68e816072ca6cdfcdebeba15ad",
-    "semantic_hash": "7370ea68e816072ca6cdfcdebeba15ad"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\test_db.js": {
-    "mtime": 1779462779.5782893,
-    "ast_hash": "9e5946a56a12bb823a8deeea2ea76d03",
-    "semantic_hash": "9e5946a56a12bb823a8deeea2ea76d03"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\test_db2.js": {
-    "mtime": 1779462897.3716805,
-    "ast_hash": "7db6af3a6b31b02c248f4d10cfddde70",
-    "semantic_hash": "7db6af3a6b31b02c248f4d10cfddde70"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\back\\update_cats.js": {
-    "mtime": 1779423513.2028902,
-    "ast_hash": "9c154f7ee1050101f9fc6234b3af3ede",
-    "semantic_hash": "9c154f7ee1050101f9fc6234b3af3ede"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\dashboard\\DashboardHeader.tsx": {
-    "mtime": 1779420062.4469602,
-    "ast_hash": "9d53c1a44568352f915374a40e6bd749",
-    "semantic_hash": "9d53c1a44568352f915374a40e6bd749"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\dashboard\\EntityDetailsPane.tsx": {
-    "mtime": 1779420160.269936,
-    "ast_hash": "206a76ec90915f4c3bd102950fa8e2e6",
-    "semantic_hash": "206a76ec90915f4c3bd102950fa8e2e6"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\dashboard\\EntityList.tsx": {
-    "mtime": 1779420103.882847,
-    "ast_hash": "cd2e1137c64328623929ea7b85c36be9",
-    "semantic_hash": "cd2e1137c64328623929ea7b85c36be9"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\dashboard\\Sidebar.tsx": {
-    "mtime": 1779420052.9872928,
-    "ast_hash": "5bb8fb424ec23c24228889f14db6f709",
-    "semantic_hash": "5bb8fb424ec23c24228889f14db6f709"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\editors\\AdvancedSections.tsx": {
-    "mtime": 1778356512.8896573,
-    "ast_hash": "aee84594ee333c1b2398e813c95ed5ce",
-    "semantic_hash": "aee84594ee333c1b2398e813c95ed5ce"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\editors\\SpriteGenerator.tsx": {
-    "mtime": 1778353993.4591658,
-    "ast_hash": "32104ede8383e22d9b2c38ee1cb0505b",
-    "semantic_hash": "32104ede8383e22d9b2c38ee1cb0505b"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\editors\\TechTreeEditor.tsx": {
-    "mtime": 1779420290.6763287,
-    "ast_hash": "f0ba0fbb6177ab36a3f57808f2b80fa3",
-    "semantic_hash": "f0ba0fbb6177ab36a3f57808f2b80fa3"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\editors\\TechTreeNodes.tsx": {
-    "mtime": 1779420274.9437983,
-    "ast_hash": "1594d34b4f779792f5f1526e8751c9aa",
-    "semantic_hash": "1594d34b4f779792f5f1526e8751c9aa"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\modals\\CivWizardModal.tsx": {
-    "mtime": 1778464138.3410137,
-    "ast_hash": "131d2d8c0177a706f20f073458710713",
-    "semantic_hash": "131d2d8c0177a706f20f073458710713"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\modals\\OverrideModal.tsx": {
-    "mtime": 1778356064.885025,
-    "ast_hash": "ff5caa67efc185e67d501ef37af5b6c5",
-    "semantic_hash": "ff5caa67efc185e67d501ef37af5b6c5"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\modals\\SpriteConfiguratorModal.tsx": {
-    "mtime": 1779420069.3261275,
-    "ast_hash": "8d2b3b7d694508574fc58bc4bfb37680",
-    "semantic_hash": "8d2b3b7d694508574fc58bc4bfb37680"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\components\\ui\\PromptModal.tsx": {
-    "mtime": 1779420170.0034256,
-    "ast_hash": "693126652dea826914a74da730a5744a",
-    "semantic_hash": "693126652dea826914a74da730a5744a"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\hooks\\useDashboardState.ts": {
-    "mtime": 1779420239.8884432,
-    "ast_hash": "ff2f5c575dc8c62e73323f25a439ff54",
-    "semantic_hash": "ff2f5c575dc8c62e73323f25a439ff54"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\front\\src\\lib\\constants.tsx": {
-    "mtime": 1779420041.6839757,
-    "ast_hash": "867e24873cd4e8033ebdb1a85775a2c4",
-    "semantic_hash": "867e24873cd4e8033ebdb1a85775a2c4"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\refactor.py": {
-    "mtime": 1779400908.9483411,
-    "ast_hash": "77c90e45bc30bee508f0343742a8ed7f",
-    "semantic_hash": "77c90e45bc30bee508f0343742a8ed7f"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\rts_flame_game.dart": {
-    "mtime": 1779399112.1683614,
-    "ast_hash": "56bac4b096519e9844dcaf5a1f9b71f7",
-    "semantic_hash": "56bac4b096519e9844dcaf5a1f9b71f7"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\spatial_grid.dart": {
-    "mtime": 1779399329.8286471,
-    "ast_hash": "d05459262e9bb40e438f6cceba91d695",
-    "semantic_hash": "d05459262e9bb40e438f6cceba91d695"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\ai\\economy_director.dart": {
-    "mtime": 1779594735.9358163,
-    "ast_hash": "d7ce99896e3a5e60a3726c6856bf45e6",
-    "semantic_hash": "d7ce99896e3a5e60a3726c6856bf45e6"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\ai\\military_director.dart": {
-    "mtime": 1779594739.533666,
-    "ast_hash": "67ba6a3deb8d8c6b54106616b39bcc22",
-    "semantic_hash": "67ba6a3deb8d8c6b54106616b39bcc22"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\managers\\combat_manager.dart": {
-    "mtime": 1779490593.0152147,
-    "ast_hash": "bd983244e201d741c7525b4c521d14c1",
-    "semantic_hash": "bd983244e201d741c7525b4c521d14c1"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\managers\\physics_manager.dart": {
-    "mtime": 1779595557.389668,
-    "ast_hash": "38631f10abae5c1aa031bae3fc7f209f",
-    "semantic_hash": "38631f10abae5c1aa031bae3fc7f209f"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\managers\\production_manager.dart": {
-    "mtime": 1779592726.9476068,
-    "ast_hash": "b9ece6e8ad63844efa7d27c4409d70b4",
-    "semantic_hash": "b9ece6e8ad63844efa7d27c4409d70b4"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\managers\\tech_tree_manager.dart": {
-    "mtime": 1779492933.8359122,
-    "ast_hash": "8693709d7831817b4c31580f7f46bd2f",
-    "semantic_hash": "8693709d7831817b4c31580f7f46bd2f"
-  },
-  "C:\\Users\\rober\\OneDrive\\Escritorio\\pruebasraras\\RTS_1\\movil\\lib\\game\\engine\\managers\\vision_manager.dart": {
-    "mtime": 1779590064.1975696,
-    "ast_hash": "9eaa95e40251f31dd67b03e2f8c88083",
-    "semantic_hash": "9eaa95e40251f31dd67b03e2f8c88083"
   }
 }
