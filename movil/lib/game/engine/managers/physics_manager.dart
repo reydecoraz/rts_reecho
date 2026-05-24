@@ -204,6 +204,9 @@ class PhysicsManager {
       switch (entity.state) {
         case EntityState.idle:
           if (_isMilitaryUnit(entity.name)) {
+             if (state.players[entity.playerIndex].type == PlayerType.human) {
+                break; // Soldados humanos se quedan parados custodiando, no atacan globalmente solos
+             }
              var mySoldiers = state.entities.where((e) => e.playerIndex == entity.playerIndex && _isMilitaryUnit(e.name)).toList();
              int requiredArmySize = 3 + (state.gameTick ~/ 100).clamp(0, 30).toInt();
              
@@ -255,6 +258,14 @@ class PhysicsManager {
           if (entity.assignedResourceTile != null && entity.assignedResourceTile!.hasResource) {
              closestResource = entity.assignedResourceTile;
           } else {
+             // Si el jugador es humano y no tiene un recurso asignado (o el que tenía se agotó),
+             // NO debe buscar automáticamente otro recurso de forma proactiva.
+             if (state.players[entity.playerIndex].type == PlayerType.human) {
+                entity.assignedResourceTile = null;
+                entity.targetResourceTile = null;
+                break; // Se queda parado inactivo
+             }
+
             if (entity.workerRole == 'food') {
               // 1. Buscar una granja aliada terminada que no esté ocupada por otro aldeano
               GameEntity? freeFarm;

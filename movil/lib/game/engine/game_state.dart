@@ -701,6 +701,24 @@ class GameState extends ChangeNotifier {
   void commandMove(int col, int row) {
     if (selectedEntities.isEmpty) return;
 
+    // Obtener la celda destino
+    final targetTile = tiles[row.clamp(0, mapSize - 1)][col.clamp(0, mapSize - 1)];
+    
+    // Verificar si es un destino de recurso
+    bool isResourceDestination = targetTile.hasResource;
+    
+    // O si hay una granja aliada terminada en esa celda
+    bool isFarmDestination = false;
+    for (var e in entities) {
+      if (e.type == EntityType.building && 
+          e.col.round() == col && 
+          e.row.round() == row && 
+          (e.name.contains('Granja') || GameDataService().getBuildingByName(e.name)?.category == 'farm')) {
+        isFarmDestination = true;
+        break;
+      }
+    }
+
     // 1. Identificar la unidad más lenta del grupo
     double slowestSpeed = 999.0;
     for (var entity in selectedEntities) {
@@ -713,21 +731,62 @@ class GameState extends ChangeNotifier {
     int gridSize = sqrt(count).ceil();
     
     for (int i = 0; i < count; i++) {
-      int r = i ~/ gridSize;
-      int c = i % gridSize;
-      int targetCol = col + (c - gridSize ~/ 2);
-      int targetRow = row + (r - gridSize ~/ 2);
-
-      // Limitar a bordes del mapa
-      targetCol = targetCol.clamp(0, mapSize - 1);
-      targetRow = targetRow.clamp(0, mapSize - 1);
-
       var entity = selectedEntities[i];
       entity.groupSpeed = slowestSpeed; // Sincronizar velocidad
-      entity.currentPath = PathfindingManager.findPath(
-        tiles, entity.col.round(), entity.row.round(), targetCol, targetRow
-      );
-      entity.state = EntityState.moving; // Usar el nuevo estado de marcha
+      
+      bool isWorker = GameDataService().getUnitByName(entity.name)?.category == 'worker';
+      
+      if (isWorker && (isResourceDestination || isFarmDestination)) {
+        // Asignar orden de recolección directa al recurso
+        entity.targetResourceTile = targetTile;
+        entity.assignedResourceTile = targetTile;
+        
+        // Asignar rol de recolector de acuerdo al tipo de recurso
+        if (isFarmDestination) {
+          entity.workerRole = 'food';
+        } else if (targetTile.resource != null) {
+          switch (targetTile.resource!.type) {
+            case ResourceType.wood:
+              entity.workerRole = 'wood';
+              break;
+            case ResourceType.gold:
+              entity.workerRole = 'gold';
+              break;
+            case ResourceType.stone:
+              entity.workerRole = 'stone';
+              break;
+            case ResourceType.food:
+              entity.workerRole = 'food';
+              break;
+          }
+        }
+        
+        entity.currentPath = PathfindingManager.findPath(
+          tiles, entity.col.round(), entity.row.round(), col, row
+        );
+        entity.state = EntityState.movingToResource;
+      } else {
+        // Movimiento normal
+        int r = i ~/ gridSize;
+        int c = i % gridSize;
+        int targetCol = col + (c - gridSize ~/ 2);
+        int targetRow = row + (r - gridSize ~/ 2);
+
+        // Limitar a bordes del mapa
+        targetCol = targetCol.clamp(0, mapSize - 1);
+        targetRow = targetRow.clamp(0, mapSize - 1);
+
+        // Limpiar estados de recolección si es movimiento normal
+        if (isWorker) {
+          entity.targetResourceTile = null;
+          entity.assignedResourceTile = null;
+        }
+
+        entity.currentPath = PathfindingManager.findPath(
+          tiles, entity.col.round(), entity.row.round(), targetCol, targetRow
+        );
+        entity.state = EntityState.moving; 
+      }
     }
     notifyListeners();
   }
